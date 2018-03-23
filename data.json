@@ -1,5 +1,4 @@
 {
-    "$schema": "https://raw.githubusercontent.com/pca006132/CommandReference/master/schema.json",
     "common-words": [
         ["AEC", "AreaEffectCloud, 药水云"],
         ["AS, 盔甲架, 装备架", "ArmorStand"],

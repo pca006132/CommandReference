@@ -5,9 +5,6 @@
     "title": "Root tag",
     "additionalProperties": false,
     "properties": {
-        "$schema": {
-            "type": "string"
-        },
         "common-words": {
             "type": "array",
             "items": {
