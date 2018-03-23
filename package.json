@@ -1,0 +1,19 @@
+{
+  "name": "command-reference",
+  "version": "1.0.0",
+  "description": "Chinese Minecraft Command Reference",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pca006132/CommandReference.git"
+  },
+  "author": "pca006132 <john.lck40@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pca006132/CommandReference/issues"
+  },
+  "homepage": "https://github.com/pca006132/CommandReference#readme"
+}
