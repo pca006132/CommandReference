@@ -24,6 +24,14 @@
     * 如果为Wiki页面，则必须实用。
 
 ## 贡献
+如果你觉得有资料尚未更新，你可以亲自帮忙！
+
+1. 注册/登入Github.
+2. Fork一份本repo（右上角有个Fork按钮）。
+3. 对自己的repo进行修改，然后commit 和 push.
+4. 给这repo来个[Pull request](https://github.com/geeeeeeeeek/git-recipes/wiki/3.3-%E5%88%9B%E5%BB%BA-Pull-Request#mary%E5%88%9B%E5%BB%BA%E4%BA%86%E4%B8%80%E4%B8%AApull-request)!
+5. 等待审阅。
+
 本索引接受以下各种Pull request:
 
 * 更新名词列表: 管理员会检查更新是否正确和必要。
@@ -37,3 +45,7 @@
 * 改善主页: 可以提出对主页的改善建议，但我们不保证能够进行改善。
 * 增加、修改标签及类型列表: 管理员会考虑是否必要。
 
+## TODO
+
+1. 录入帖子。**这需要各位的帮助！**
+2. 编写主页。
