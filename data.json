@@ -24,7 +24,7 @@
         ["计分板、记分板、scb", "scoreboard(wiki官方译名:记分板)"],
         ["文本JSON", "Raw JSON(/tellraw, /title等)"]
     ],
-    "threads": [
+    "threads": {
 
-    ]
+    }
 }

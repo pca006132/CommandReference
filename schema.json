@@ -4,7 +4,7 @@
     "type": "object",
     "title": "Root tag",
     "additionalProperties": false,
-    "properties": {
+    "requiredProperties": {
         "common-words": {
             "type": "array",
             "items": {
@@ -23,84 +23,88 @@
             }
         },
         "threads": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "title": {
-                        "type": "string",
-                        "title": "帖子标题"
-                    },
-                    "last-update": {
-                        "type": "string",
-                        "format": "^\\d{4}-\\d{2}-\\d{2}$"
-                    },
-                    "tags": {
-                        "type": "array",
-                        "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "requiredProperties": {
+                "url": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "title": {
+                            "type": "string",
+                            "title": "帖子标题"
+                        },
+                        "last-update": {
+                            "type": "string",
+                            "format": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "tags": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "oneOf": [
+                                    {"format": "^基础$"},
+                                    {"format": "^进阶$"},
+                                    {"format": "^计算$"},
+                                    {"format": "^几何$"},
+                                    {"format": "^算法$"},
+                                    {"format": "^特技$"},
+                                    {"format": "^NBT$"},
+                                    {"format": "^游戏机制$"},
+                                    {"format": "^黑科技$"},
+                                    {"format": "^人生经验$"},
+                                    {"format": "^游戏系统$"},
+                                    {"format": "^命令介绍$"},
+                                    {"format": "^原版模组$"},
+                                    {"format": "^地图作品$"},
+                                    {"format": "^概念验证$"},
+                                    {"format": "^OOC生成$"},
+                                    {"format": "^自定义生成器$"},
+                                    {"format": "^其他生成器/资源$"},
+                                    {"format": "^实例$"},
+                                    {"format": "^过时$"},
+                                    {"format": "^即将过时$"},
+                                    {"format": "^英语$"}
+                                ]
+                            },
+                            "minItems": 1,
+                            "maxItems": 5
+                        },
+                        "category": {
                             "type": "string",
                             "oneOf": [
-                                {"format": "^基础$"},
-                                {"format": "^进阶$"},
-                                {"format": "^计算$"},
-                                {"format": "^几何$"},
-                                {"format": "^算法$"},
-                                {"format": "^特技$"},
-                                {"format": "^NBT$"},
+                                {"format": "^有趣问答$"},
+                                {"format": "^算法逻辑$"},
+                                {"format": "^系统制作技巧$"},
+                                {"format": "^NBT介绍$"},
+                                {"format": "^作品例子$"},
                                 {"format": "^游戏机制$"},
-                                {"format": "^黑科技$"},
-                                {"format": "^人生经验$"},
-                                {"format": "^游戏系统$"},
-                                {"format": "^命令介绍$"},
-                                {"format": "^原版模组$"},
-                                {"format": "^地图作品$"},
-                                {"format": "^概念验证$"},
-                                {"format": "^OOC生成$"},
-                                {"format": "^自定义生成器$"},
-                                {"format": "^其他生成器/资源$"},
-                                {"format": "^实例$"},
-                                {"format": "^过时$"},
-                                {"format": "^即将过时$"},
-                                {"format": "^英语$"}
+                                {"format": "^教程索引$"},
+                                {"format": "^命令/格式教程$"},
+                                {"format": "^常用网站$"},
+                                {"format": "^生成器/资源$"},
+                                {"format": "^其他$"}
                             ]
                         },
-                        "minItems": 1,
-                        "maxItems": 5
-                    },
-                    "category": {
-                        "type": "string",
-                        "oneOf": [
-                            {"format": "^有趣问答$"},
-                            {"format": "^算法逻辑$"},
-                            {"format": "^系统制作技巧$"},
-                            {"format": "^NBT介绍$"},
-                            {"format": "^作品例子$"},
-                            {"format": "^游戏机制$"},
-                            {"format": "^教程索引$"},
-                            {"format": "^命令/格式教程$"},
-                            {"format": "^常用网站$"},
-                            {"format": "^生成器/资源$"},
-                            {"format": "^其他$"}
-                        ]
-                    },
-                    "versions": {
-                        "type": "array",
-                        "items": {
-                            "type": "string",
-                            "oneOf": [
-                                {"format": "^1\\.8$"},
-                                {"format": "^1\\.9$"},
-                                {"format": "^1\\.10$"},
-                                {"format": "^1\\.11$"},
-                                {"format": "^1\\.12$"},
-                                {"format": "^1\\.13$"}
-                            ]
+                        "versions": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "oneOf": [
+                                    {"format": "^1\\.8$"},
+                                    {"format": "^1\\.9$"},
+                                    {"format": "^1\\.10$"},
+                                    {"format": "^1\\.11$"},
+                                    {"format": "^1\\.12$"},
+                                    {"format": "^1\\.13$"}
+                                ]
+                            }
+                        },
+                        "recommended": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 2
                         }
-                    },
-                    "recommended": {
-                        "type": "integer",
-                        "minimum": 0,
-                        "maximum": 2
                     }
                 }
             }

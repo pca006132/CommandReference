@@ -4,7 +4,7 @@
   "description": "Chinese Minecraft Command Reference",
   "main": "index.js",
   "scripts": {
-    "check": "node index.js"
+    "check" : "node index.js"
   },
   "repository": {
     "type": "git",
