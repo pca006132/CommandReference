@@ -4,7 +4,7 @@
     "type": "object",
     "title": "Root tag",
     "additionalProperties": false,
-    "requiredProperties": {
+    "properties": {
         "common-words": {
             "type": "array",
             "items": {
@@ -25,8 +25,8 @@
         "threads": {
             "type": "object",
             "additionalProperties": false,
-            "requiredProperties": {
-                "url": {
+            "patternProperties": {
+                "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)": {
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
@@ -42,29 +42,28 @@
                             "type": "array",
                             "items": {
                                 "type": "string",
-                                "oneOf": [
-                                    {"format": "^基础$"},
-                                    {"format": "^进阶$"},
-                                    {"format": "^计算$"},
-                                    {"format": "^几何$"},
-                                    {"format": "^算法$"},
-                                    {"format": "^特技$"},
-                                    {"format": "^NBT$"},
-                                    {"format": "^游戏机制$"},
-                                    {"format": "^黑科技$"},
-                                    {"format": "^人生经验$"},
-                                    {"format": "^游戏系统$"},
-                                    {"format": "^命令介绍$"},
-                                    {"format": "^原版模组$"},
-                                    {"format": "^地图作品$"},
-                                    {"format": "^概念验证$"},
-                                    {"format": "^OOC生成$"},
-                                    {"format": "^自定义生成器$"},
-                                    {"format": "^其他生成器/资源$"},
-                                    {"format": "^实例$"},
-                                    {"format": "^过时$"},
-                                    {"format": "^即将过时$"},
-                                    {"format": "^英语$"}
+                                "enum": ["基础",
+                                    "进阶",
+                                    "计算",
+                                    "几何",
+                                    "算法",
+                                    "特技",
+                                    "NBT",
+                                    "游戏机制",
+                                    "黑科技",
+                                    "人生经验",
+                                    "游戏系统",
+                                    "命令介绍",
+                                    "原版模组",
+                                    "地图作品",
+                                    "概念验证",
+                                    "OOC生成",
+                                    "自定义生成器",
+                                    "其他生成器/资源",
+                                    "实例",
+                                    "过时",
+                                    "即将过时",
+                                    "英语"
                                 ]
                             },
                             "minItems": 1,
@@ -72,31 +71,31 @@
                         },
                         "category": {
                             "type": "string",
-                            "oneOf": [
-                                {"format": "^有趣问答$"},
-                                {"format": "^算法逻辑$"},
-                                {"format": "^系统制作技巧$"},
-                                {"format": "^NBT介绍$"},
-                                {"format": "^作品例子$"},
-                                {"format": "^游戏机制$"},
-                                {"format": "^教程索引$"},
-                                {"format": "^命令/格式教程$"},
-                                {"format": "^常用网站$"},
-                                {"format": "^生成器/资源$"},
-                                {"format": "^其他$"}
+                            "enum": [
+                                "有趣问答",
+                                "算法逻辑",
+                                "系统制作技巧",
+                                "NBT介绍",
+                                "作品例子",
+                                "游戏机制",
+                                "教程索引",
+                                "命令/格式教程",
+                                "常用网站",
+                                "生成器/资源",
+                                "其他"
                             ]
                         },
                         "versions": {
                             "type": "array",
                             "items": {
                                 "type": "string",
-                                "oneOf": [
-                                    {"format": "^1\\.8$"},
-                                    {"format": "^1\\.9$"},
-                                    {"format": "^1\\.10$"},
-                                    {"format": "^1\\.11$"},
-                                    {"format": "^1\\.12$"},
-                                    {"format": "^1\\.13$"}
+                                "enum": [
+                                    "1.8",
+                                    "1.9",
+                                    "1.10",
+                                    "1.11",
+                                    "1.12",
+                                    "1.13"
                                 ]
                             }
                         },
@@ -105,9 +104,15 @@
                             "minimum": 0,
                             "maximum": 2
                         }
-                    }
+                    },
+                    "required": [
+                        "title", "last-update", "tags", "category", "versions", "recommended"
+                    ]
                 }
             }
         }
-    }
+    },
+    "required": [
+        "common-words", "threads"
+    ]
 }
