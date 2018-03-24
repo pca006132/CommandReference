@@ -17,7 +17,16 @@
             <b-row fluid="true">
 
                 <b-col class="col-12 col-md-9 bd-content" id="content">
-                    <greet></greet>
+                    <div class="d-block">
+                        <div class="d-inline-block">
+                            <img src="./assets/logo.png">
+                        </div>
+                        <br class="d-md-none" />
+                        <div class="d-inline-block align-middle">
+                            <h1 id="intro">命令快车</h1>
+                            <p>您的命令参考索引</p>
+                        </div>
+                    </div>
                 </b-col>
 
                 <b-col class="col-12 col-md-3 order-md-first" id="searchbar">
@@ -32,7 +41,6 @@
 </template>
 
 <script>
-    import greet from './greet.vue';
     import title_search from './filter/search.vue';
     import tags_filter from './filter/tags.vue';
     import version_selector from './filter/version.vue';
@@ -40,7 +48,6 @@
     export default {
         name: 'app',
         components: {
-            greet: greet,
             'title-search': title_search,
             tags: tags_filter,
             version: version_selector
@@ -77,7 +84,7 @@
         },
         methods: {
             update: function (content) {
-                console.log("updated as " + content);
+                //TODO: ADD THREADs FILTER
             }
         }
     }

@@ -1,6 +1,6 @@
 <template>
    <b-card title="筛选Tag" >
-        <b-badge v-on:click="toggle" variant="light" v-for="tag in tags" :key="tag">{{tag}}</b-badge>
+        <b-badge class="noselect" v-on:click="toggle" variant="light" v-for="tag in tags" :key="tag">{{tag}}</b-badge>
    </b-card>
 </template>
 
@@ -35,3 +35,15 @@ export default {
     }
 }
 </script>
+
+<style>
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+     -khtml-user-select: none;   /* Konqueror HTML */
+       -moz-user-select: none;   /* Firefox */
+        -ms-user-select: none;   /* Internet Explorer/Edge */
+            user-select: none;   /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+</style>
