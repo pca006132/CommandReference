@@ -107,9 +107,30 @@
                     ]
                 }
             }
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "version": {
+            "type": "object",
+            "properties": {
+                "min": {
+                    "type": "integer"
+                },
+                "max": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "min", "max"
+            ],
+            "additionalProperties": false
         }
     },
     "required": [
-        "common-words", "threads"
+        "common-words", "threads", "tags", "version"
     ]
 }
