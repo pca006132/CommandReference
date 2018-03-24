@@ -27,10 +27,17 @@
 如果你觉得有资料尚未更新，你可以亲自帮忙！
 
 1. 注册/登入Github.
-2. Fork一份本repo（右上角有个Fork按钮）。
+2. Fork一份本repo（右上角有个Fork按钮）。（之后需要更新的话请 ）
 3. 对自己的repo进行修改，然后commit 和 push.
 4. 给这repo来个[Pull request](https://github.com/geeeeeeeeek/git-recipes/wiki/3.3-%E5%88%9B%E5%BB%BA-Pull-Request#mary%E5%88%9B%E5%BB%BA%E4%BA%86%E4%B8%80%E4%B8%AApull-request)!
 5. 等待审阅。
+
+由于本repo会不断地merge各种pull request及进行改动，所以你的fork可能会过时，这就需要进行merge:
+1. 设置upstream: `git remote add upstream https://github.com/pca006132/CommandReference.git` （只需要设置一次）
+2. 检查upstream有没有更新，有的话就拉过来: `git fetch upstream`
+3. 合并upstream更新: `git merge upstream/master`。（如果出现冲突，即conflict，则建议询问其他用户如何修复）
+
+--------
 
 本索引接受以下各种Pull request:
 
