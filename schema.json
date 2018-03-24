@@ -42,7 +42,8 @@
                             "type": "array",
                             "items": {
                                 "type": "string",
-                                "enum": ["基础",
+                                "enum": [
+                                    "基础",
                                     "进阶",
                                     "计算",
                                     "几何",
@@ -85,19 +86,15 @@
                                 "其他"
                             ]
                         },
-                        "versions": {
-                            "type": "array",
-                            "items": {
-                                "type": "string",
-                                "enum": [
-                                    "1.8",
-                                    "1.9",
-                                    "1.10",
-                                    "1.11",
-                                    "1.12",
-                                    "1.13"
-                                ]
-                            }
+                        "version-min": {
+                            "type": "integer",
+                            "minimum": 8,
+                            "maximum": 13
+                        },
+                        "version-max": {
+                            "type": "integer",
+                            "minimum": 8,
+                            "maximum": 13
                         },
                         "recommended": {
                             "type": "integer",
@@ -106,7 +103,7 @@
                         }
                     },
                     "required": [
-                        "title", "last-update", "tags", "category", "versions", "recommended"
+                        "title", "last-update", "tags", "category", "version-min", "version-max", "recommended"
                     ]
                 }
             }
