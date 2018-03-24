@@ -29,8 +29,7 @@ export default {
     },
     data () {
         return {
-            filter: [],
-            tags: this.$props.tags
+            filter: []
         }
     }
 }

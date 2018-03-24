@@ -27,6 +27,14 @@
                             <p>您的命令参考索引</p>
                         </div>
                     </div>
+
+                    <b-card title="Test">
+                        <b-container>
+                            <thread v-bind:url="url" v-bind:properties="properties"></thread>
+                            <thread v-bind:url="url" v-bind:properties="properties"></thread>
+                            <thread v-bind:url="url" v-bind:properties="properties"></thread>
+                        </b-container>
+                    </b-card>
                 </b-col>
 
                 <b-col class="col-12 col-md-3 order-md-first" id="searchbar">
@@ -44,13 +52,15 @@
     import title_search from './filter/search.vue';
     import tags_filter from './filter/tags.vue';
     import version_selector from './filter/version.vue';
+    import thread from './thread.vue';
 
     export default {
         name: 'app',
         components: {
             'title-search': title_search,
             tags: tags_filter,
-            version: version_selector
+            version: version_selector,
+            thread: thread
         },
         data() {
             return {
@@ -79,7 +89,17 @@
                     "过时",
                     "即将过时",
                     "英语"
-                ]
+                ],
+                properties: {
+                    "title": "NBT操作：从入门到mjsb",
+                    "last-update": "2018-03-24",
+                    "tags": ["基础", "命令介绍", "NBT"],
+                    "category": "命令/格式教程",
+                    "version-min": 13,
+                    "version-max": 13,
+                    "recommended": 2
+                },
+                url: "http://www.mcbbs.net/thread-787422-1-1.html"
             }
         },
         methods: {
