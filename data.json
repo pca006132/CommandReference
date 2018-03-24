@@ -25,6 +25,37 @@
         ["文本JSON", "Raw JSON(/tellraw, /title等)"]
     ],
     "threads": {
-
+        "http://www.mcbbs.net/thread-787422-1-1.html": {
+            "title": "NBT操作：从入门到mjsb",
+            "last-update": "2018-03-24",
+            "tags": ["基础", "命令介绍"],
+            "category": "命令/格式教程",
+            "versions": ["1.13"],
+            "recommended": 2
+        },
+        "http://www.mcbbs.net/thread-786316-1-1.html": {
+            "title": "鱼乐无穷 —— 热带鱼生成器",
+            "last-update": "2018-03-09",
+            "tags": ["自定义生成器"],
+            "category": "生成器/资源",
+            "versions": ["1.13"],
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-785724-1-1.html": {
+            "title": "使用“数据生成器”直接获得所有方块/物品/命令和其他东西的内容",
+            "last-update": "2018-03-10",
+            "tags": ["进阶"],
+            "category": "其他",
+            "versions": ["1.13"],
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-779319-1-1.html": {
+            "title": "石锤！原版自瞄！",
+            "last-update": "2018-03-10",
+            "tags": ["进阶","实例"],
+            "category": "作品例子",
+            "versions": ["1.13"],
+            "recommended": 1
+        }
     }
 }
