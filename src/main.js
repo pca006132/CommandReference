@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import BootstrapVue from "bootstrap-vue"
+import bootstrapVue from "bootstrap-vue"
 import App from './app.vue'
 
-Vue.use(BootstrapVue)
+Vue.use(bootstrapVue)
 
 new Vue({
   el: '#app',
