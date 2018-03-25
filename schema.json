@@ -20,6 +20,16 @@
                 }
             }
         },
+        "adv": {
+            "type": "object",
+            "additionalProperties": false,
+            "patternProperties": {
+                "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)": {
+                    "type": "string",
+                    "pattern": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)"
+                }
+            }
+        },
         "threads": {
             "type": "object",
             "additionalProperties": false,
@@ -130,6 +140,6 @@
         }
     },
     "required": [
-        "common-words", "threads", "tags", "version"
+        "common-words", "threads", "tags", "version", "adv"
     ]
 }

@@ -79,7 +79,7 @@ export default {
 }
 
 .title {
-    color: #16754a;
+    color: #28a745;
 }
 
 .thread {

@@ -15,7 +15,8 @@ $.get("https://raw.githubusercontent.com/pca006132/CommandReference/master/data.
                 version_max: data.version.max,
                 tags: data.tags,
                 threads: data.threads,
-                words: data["common-words"]
+                words: data["common-words"],
+                pics: data.adv
             }
         })
     })

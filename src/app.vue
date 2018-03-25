@@ -21,33 +21,9 @@
         <b-container fluid="true" id="container">
             <b-row fluid="true">
                 <b-col class="col-12 col-md-9 bd-content" id="content">
-                    <div class="d-block">
-                        <div class="d-inline-block">
-                            <img src="./assets/logo.png">
-                        </div>
-                        <br class="d-md-none" />
-                        <div class="d-inline-block align-middle">
-                            <h1 id="intro">命令资源大全</h1>
-                            <p>您的命令参考索引</p>
-                        </div>
-                    </div>
-                    <hr />
-                    <div class="d-block text-center">
-                        <p class="text-left d-inline-block">
-                            命令资源大全是一个命令相关资源的索引网站，各位可以：<br/>
-                            1. 阅读各新人教程，学习命令 <br />
-                            2. 搜索各种黑科技，制作更好的系统和地图 <br />
-                            3. 找到需要的生成器软件，加快系统编写效率 <br /><br />
-                            各教程及生成器作者更可以在此宣传各位的作品！
-                        </p>
-                        <p>
-                            命令资源大全（原新人手册）进行了大量更新，现在急需各位帮助更新！<br />
-                            详情请点击
-                            <a href="https://github.com/pca006132/CommandReference">命令资源大全(GitHub)</a>。
-                        </p>
-                    </div>
+                    <intro></intro>
+                    <adv :pics="pics"></adv>
                     <manager :threads="threads" :title="title" :tags="filter_tags" :version="version" v-on:update="update_categories"></manager>
-
                     <hr />
                     <h3 id="words">常用字词表</h3>
                     <b-table class="text-left" striped hover :items="words"></b-table>
@@ -69,6 +45,8 @@
     import tags_filter from './filter/tags.vue';
     import version_selector from './filter/version.vue';
     import manager from './threads/manager.vue';
+    import intro from './intro.vue';
+    import adv from './adv.vue';
 
     export default {
         name: 'app',
@@ -76,14 +54,17 @@
             search: title_search,
             tags: tags_filter,
             version: version_selector,
-            manager: manager
+            manager: manager,
+            intro: intro,
+            adv: adv
         },
         props: {
             version_min: Number,
             version_max: Number,
             tags: Array,
             threads: Array,
-            words: Array
+            words: Array,
+            pics: Object
         },
         data() {
             return {
