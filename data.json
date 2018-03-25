@@ -1,29 +1,74 @@
 {
-    "common-words": [
-        ["AEC", "AreaEffectCloud, 药水云"],
-        ["AS, 盔甲架, 装备架", "ArmorStand"],
-        ["cb、命令方块、指令方块", "command block"],
-        ["ccb", "chain command block, 链锁命令方块"],
-        ["exe", "execute"],
-        ["gm", "gamemode"],
-        ["icb", "impulse command block, 就是普通的命令方块(脉冲命令方块)"],
-        ["lt", "loot table, 可掠夺物品表(用以修改生物掉落)"],
-        ["OOC", "\"一条\"命令(Only One Command)。即把多条命令压缩为一条summon命令, 或以一条summon命令生成多个命令方块"],
-        ["rcb", "repeating command block, 循环命令方块"],
-        ["spcl", "spreadplayers指令做的chunk loader(区块加载器)，注这简写极少用"],
-        ["stats", "stats指令"],
-        ["stat", "玩家统计(记分板)"],
-        ["判据、准则", "scoreboard的criteria(wiki官方译名:准则)"],
-        ["命令、指令、\"代码\"", "command"],
-        ["数据值、伤害值", "damage"],
-        ["显示区、显示位置", "display slot(wiki官方译名:显示位置)"],
-        ["目标、对象、变数", "scoreboard的objective(wiki官方译名:目标)"],
-        ["目标选择器、实体选择器", "target selector"],
-        ["碰撞箱", "hitbox"],
-        ["触发器", "trigger"],
-        ["计分板、记分板、scb", "scoreboard(wiki官方译名:记分板)"],
-        ["文本JSON", "Raw JSON(/tellraw, /title等)"]
-    ],
+    "common-words": [{
+        "缩写": "AEC",
+        "描述": "AreaEffectCloud, 药水云"
+    }, {
+        "缩写": "AS, 盔甲架, 装备架",
+        "描述": "ArmorStand"
+    }, {
+        "缩写": "cb、命令方块、指令方块",
+        "描述": "command block"
+    }, {
+        "缩写": "ccb",
+        "描述": "chain command block, 链锁命令方块"
+    }, {
+        "缩写": "exe",
+        "描述": "execute"
+    }, {
+        "缩写": "gm",
+        "描述": "gamemode"
+    }, {
+        "缩写": "icb",
+        "描述": "impulse command block, 就是普通的命令方块(脉冲命令方块)"
+    }, {
+        "缩写": "lt",
+        "描述": "loot table, 可掠夺物品表(用以修改生物掉落)"
+    }, {
+        "缩写": "OOC",
+        "描述": "\"一条\"命令(Only One Command)。即把多条命令压缩为一条summon命令, 或以一条summon命令生成多个命令方块"
+    }, {
+        "缩写": "rcb",
+        "描述": "repeating command block, 循环命令方块"
+    }, {
+        "缩写": "spcl",
+        "描述": "spreadplayers指令做的chunk loader(区块加载器)，注这简写极少用"
+    }, {
+        "缩写": "stats",
+        "描述": "stats指令"
+    }, {
+        "缩写": "stat",
+        "描述": "玩家统计(记分板)"
+    }, {
+        "缩写": "判据、准则",
+        "描述": "scoreboard的criteria(wiki官方译名:准则)"
+    }, {
+        "缩写": "命令、指令、\"代码\"",
+        "描述": "command"
+    }, {
+        "缩写": "数据值、伤害值",
+        "描述": "damage"
+    }, {
+        "缩写": "显示区、显示位置",
+        "描述": "display slot(wiki官方译名:显示位置)"
+    }, {
+        "缩写": "目标、对象、变数",
+        "描述": "scoreboard的objective(wiki官方译名:目标)"
+    }, {
+        "缩写": "目标选择器、实体选择器",
+        "描述": "target selector"
+    }, {
+        "缩写": "碰撞箱",
+        "描述": "hitbox"
+    }, {
+        "缩写": "触发器",
+        "描述": "trigger"
+    }, {
+        "缩写": "计分板、记分板、scb",
+        "描述": "scoreboard(wiki官方译名:记分板)"
+    }, {
+        "缩写": "文本JSON",
+        "描述": "Raw JSON(/tellraw, /title等)"
+    }],
     "tags": [
         "基础",
         "进阶",
@@ -83,7 +128,7 @@
         "http://www.mcbbs.net/thread-779319-1-1.html": {
             "title": "石锤！原版自瞄！",
             "last-update": "2018-03-10",
-            "tags": ["进阶","实例", "计算"],
+            "tags": ["进阶", "实例", "计算"],
             "category": "作品例子",
             "version-min": 13,
             "version-max": 13,

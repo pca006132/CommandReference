@@ -8,18 +8,16 @@
         "common-words": {
             "type": "array",
             "items": {
-                "type": "array",
-                "items": [
-                    {
-                        "type": "string",
-                        "title": "词",
-                        "description": "那常用词以及其缩写"
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "缩写": {
+                        "type": "string"
                     },
-                    {
-                        "type": "string",
-                        "title": "描述"
+                    "描述": {
+                        "type": "string"
                     }
-                ]
+                }
             }
         },
         "threads": {
