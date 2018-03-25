@@ -6,12 +6,12 @@
                 <a v-bind:href="url" target="_blank">{{properties.title}}</a>
             </div>
         </b-col>
-        <b-col class="col-6 col-md-4">
+        <b-col class="col-12 col-md-4">
             <div class="box">
                 <b-badge class="noselect tag" variant="secondary" v-for="tag in properties.tags" :key="tag">{{tag}}</b-badge>
             </div>
         </b-col>
-        <b-col class="col-6 col-md-2">
+        <b-col class="col-12 col-md-2">
             <div class="box">
                 <span class="align-middle">{{properties["last-update"]}}</span>
             </div>
@@ -47,9 +47,16 @@ export default {
                                     supported by Chrome and Opera */
 }
 
+.thread {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+}
+
 .box {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .tag {

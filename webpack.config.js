@@ -5,7 +5,8 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   externals: {
     vue: 'Vue',
-    'bootstrap-vue': 'bootstrapVue'
+    'bootstrap-vue': 'bootstrapVue',
+    jquery: '$'
   },
   entry: './src/main.js',
   output: {

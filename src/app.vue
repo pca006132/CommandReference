@@ -2,20 +2,24 @@
     <div id="app">
         <b-navbar variant="dark" type="dark" sticky="true" toggleable="md">
             <b-navbar-brand href="#intro">
-                <img src="./assets/logo.png" style="width:1.5em;" class="d-inline-block align-top"> 命令快车
+                <img src="./assets/logo.png" style="width:1.5em;" class="d-inline-block align-top"> 命令资源大全
             </b-navbar-brand>
             <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
             <b-collapse is-nav="true" id="nav_collapse">
                 <b-navbar-nav>
-                    <b-nav-item to="/faq">FA Q</b-nav-item>
-                    <b-nav-item to="/contribution">贡献 </b-nav-item>
+                    <b-nav-item to="#words">常用字词表</b-nav-item>
+                    <b-nav-item to="https://github.com/pca006132/CommandReference">GitHub</b-nav-item>
                     <b-nav-item to="#searchbar" class="d-md-none">搜索</b-nav-item>
+                    <b-nav-item-dropdown text="章节" right>
+                        <b-dropdown-item v-for="category in categories" :href="'#' + category[1]" :key="category[1]">
+                            {{category[0]}}
+                        </b-dropdown-item>
+                    </b-nav-item-dropdown>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
         <b-container fluid="true" id="container">
             <b-row fluid="true">
-
                 <b-col class="col-12 col-md-9 bd-content" id="content">
                     <div class="d-block">
                         <div class="d-inline-block">
@@ -23,25 +27,36 @@
                         </div>
                         <br class="d-md-none" />
                         <div class="d-inline-block align-middle">
-                            <h1 id="intro">命令快车</h1>
+                            <h1 id="intro">命令资源大全</h1>
                             <p>您的命令参考索引</p>
                         </div>
                     </div>
+                    <hr />
+                    <div class="d-block text-center">
+                        <p class="text-left d-inline-block">
+                            命令资源大全是一个命令相关资源的索引网站，各位可以：<br/>
+                            1. 阅读各新人教程，学习命令 <br />
+                            2. 搜索各种黑科技，制作更好的系统和地图 <br />
+                            3. 找到需要的生成器软件，加快系统编写效率 <br /><br />
+                            各教程及生成器作者更可以在此宣传各位的作品！
+                        </p>
+                        <p>
+                            命令资源大全（原新人手册）进行了大量更新，现在急需各位帮助更新！详情请点击
+                            <a href="https://github.com/pca006132/CommandReference">命令资源大全(GitHub)</a>。
+                        </p>
+                    </div>
+                    <manager :threads="threads" :title="title" :tags="filter_tags" :version="version" v-on:update="update_categories"></manager>
 
-                    <b-card title="Test">
-                        <b-container>
-                            <thread v-bind:url="url" v-bind:properties="properties"></thread>
-                            <thread v-bind:url="url" v-bind:properties="properties"></thread>
-                            <thread v-bind:url="url" v-bind:properties="properties"></thread>
-                        </b-container>
-                    </b-card>
+                    <hr />
+                    <h3 id="words">常用字词表</h3>
+                    <b-table striped hover :items="words"></b-table>
                 </b-col>
 
                 <b-col class="col-12 col-md-3 order-md-first" id="searchbar">
                     <hr class="d-md-none" />
-                    <title-search v-on:update="update"></title-search>
-                    <tags v-bind:tags="tags" v-on:update="update"></tags>
-                    <version v-bind:min="version_min" v-bind:max="version_max" v-on:update="update"></version>
+                    <search v-on:update="update_title"></search>
+                    <tags :tags="tags" v-on:update="update_tags"></tags>
+                    <version :min="version_min" :max="version_max" v-on:update="update_version"></version>
                 </b-col>
             </b-row>
         </b-container>
@@ -52,59 +67,43 @@
     import title_search from './filter/search.vue';
     import tags_filter from './filter/tags.vue';
     import version_selector from './filter/version.vue';
-    import thread from './thread.vue';
+    import manager from './threads/manager.vue';
 
     export default {
         name: 'app',
         components: {
-            'title-search': title_search,
+            search: title_search,
             tags: tags_filter,
             version: version_selector,
-            thread: thread
+            manager: manager
+        },
+        props: {
+            version_min: Number,
+            version_max: Number,
+            tags: Array,
+            threads: Array,
+            words: Array
         },
         data() {
             return {
-                version_min: 8,
-                version_max: 13,
-                tags: [
-                    "基础",
-                    "进阶",
-                    "计算",
-                    "几何",
-                    "算法",
-                    "特技",
-                    "NBT",
-                    "游戏机制",
-                    "黑科技",
-                    "人生经验",
-                    "游戏系统",
-                    "命令介绍",
-                    "原版模组",
-                    "地图作品",
-                    "概念验证",
-                    "OOC生成",
-                    "自定义生成器",
-                    "其他生成器/资源",
-                    "实例",
-                    "过时",
-                    "即将过时",
-                    "英语"
-                ],
-                properties: {
-                    "title": "NBT操作：从入门到mjsb",
-                    "last-update": "2018-03-24",
-                    "tags": ["基础", "命令介绍", "NBT"],
-                    "category": "命令/格式教程",
-                    "version-min": 13,
-                    "version-max": 13,
-                    "recommended": 2
-                },
-                url: "http://www.mcbbs.net/thread-787422-1-1.html"
+                categories: [],
+                filter_tags: [],
+                title: '',
+                version: '任意版本'
             }
         },
         methods: {
-            update: function (content) {
-                //TODO: ADD THREADs FILTER
+            update_categories(content) {
+                this.$data.categories = content;
+            },
+            update_tags(content) {
+                this.$data.filter_tags = content;
+            },
+            update_title(content) {
+                this.$data.title = content;
+            },
+            update_version(content) {
+                this.$data.version = content;
             }
         }
     }
