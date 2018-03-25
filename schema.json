@@ -62,11 +62,12 @@
                                     "实例",
                                     "过时",
                                     "即将过时",
+                                    "预览版",
                                     "英语"
                                 ]
                             },
                             "minItems": 1,
-                            "maxItems": 5
+                            "maxItems": 8
                         },
                         "category": {
                             "type": "string",

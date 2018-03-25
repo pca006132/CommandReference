@@ -91,6 +91,7 @@
         "实例",
         "过时",
         "即将过时",
+        "预览版",
         "英语"
     ],
     "version": {
@@ -101,7 +102,7 @@
         "http://www.mcbbs.net/thread-787422-1-1.html": {
             "title": "NBT操作：从入门到mjsb",
             "last-update": "2018-03-24",
-            "tags": ["基础", "命令介绍", "NBT"],
+            "tags": ["基础", "命令介绍", "NBT", "预览版"],
             "category": "命令/格式教程",
             "version-min": 13,
             "version-max": 13,
@@ -110,7 +111,7 @@
         "http://www.mcbbs.net/thread-786316-1-1.html": {
             "title": "鱼乐无穷 —— 热带鱼生成器",
             "last-update": "2018-03-09",
-            "tags": ["自定义生成器"],
+            "tags": ["自定义生成器", "预览版"],
             "category": "生成器/资源",
             "version-min": 13,
             "version-max": 13,
@@ -119,7 +120,7 @@
         "http://www.mcbbs.net/thread-785724-1-1.html": {
             "title": "原版“数据生成器”——获取各种ID及命令格式",
             "last-update": "2018-03-10",
-            "tags": ["进阶"],
+            "tags": ["进阶", "预览版"],
             "category": "其他",
             "version-min": 13,
             "version-max": 13,
@@ -128,7 +129,7 @@
         "http://www.mcbbs.net/thread-779319-1-1.html": {
             "title": "石锤！原版自瞄！",
             "last-update": "2018-03-10",
-            "tags": ["进阶", "实例", "计算"],
+            "tags": ["进阶", "实例", "计算", "预览版"],
             "category": "作品例子",
             "version-min": 13,
             "version-max": 13,

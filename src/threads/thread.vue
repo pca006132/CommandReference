@@ -1,14 +1,14 @@
 <template>
     <b-row class="thread">
         <b-col class="col-12 col-md-6">
-            <div class="box">
+            <div class="box text-left">
                 <b-badge class="noselect tag" variant="success">{{version}}</b-badge>
                 <a v-bind:href="url" target="_blank">{{properties.title}}</a>
             </div>
         </b-col>
         <b-col class="col-12 col-md-4">
-            <div class="box">
-                <b-badge class="noselect tag" variant="secondary" v-for="tag in properties.tags" :key="tag">{{tag}}</b-badge>
+            <div class="box text-left">
+                <b-badge class="noselect tag" v-for="tag in properties.tags" :key="tag" :variant="variant(tag)">{{tag}}</b-badge>
             </div>
         </b-col>
         <b-col class="col-12 col-md-2">
@@ -25,6 +25,20 @@ export default {
     props: {
         properties: Object,
         url: String
+    },
+    methods: {
+        variant: function(tag) {
+            if (tag === '过时') {
+                return 'danger';
+            }
+            if (tag === '预览版') {
+                return 'success';
+            }
+            if (tag === '英语') {
+                return 'warning';
+            }
+            return 'secondary';
+        }
     },
     computed: {
         version: function () {

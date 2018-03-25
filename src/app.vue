@@ -49,7 +49,7 @@
 
                     <hr />
                     <h3 id="words">常用字词表</h3>
-                    <b-table striped hover :items="words"></b-table>
+                    <b-table class="text-left" striped hover :items="words"></b-table>
                 </b-col>
 
                 <b-col class="col-12 col-md-3 order-md-first" id="searchbar">
@@ -125,7 +125,10 @@
     #searchbar {
         @media only screen and (min-width: 768px) {
             border-right: 1px solid gray;
-            min-height: 85vh;
+            height: 90vh;
+            overflow-y: auto;
+            position: sticky;
+            top: 5em;
         }
     }
 

@@ -24,6 +24,13 @@ export default {
 </script>
 
 <style>
+
+.category .thread:first-child {
+    margin-top: -0.75em;
+}
+.category .thread:last-child {
+    margin-bottom: -0.75em;
+}
 .category .thread:not(:last-child) {
     border-bottom: 1px solid rgba(0,0,0,.125);
 }

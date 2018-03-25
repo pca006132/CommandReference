@@ -1,8 +1,8 @@
 <template>
-    <b-container>
+    <div class="categories">
         <hr />
         <category v-for="cat in categories[0]" :key="cat[1]" :header="cat[0]" :id="cat[1]" :sorted="categories[1][cat[0]]" :threads="threads" ></category>
-    </b-container>
+    </div>
 </template>
 
 <script>
