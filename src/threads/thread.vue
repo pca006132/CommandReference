@@ -2,13 +2,15 @@
     <b-row class="thread">
         <b-col class="col-12 col-md-6">
             <div class="box text-left">
-                <b-badge class="noselect tag" variant="success">{{version}}</b-badge>
-                <a v-bind:href="url" target="_blank">{{properties.title}}</a>
+                <a class="title" v-bind:href="url" target="_blank">{{properties.title}}</a>
             </div>
         </b-col>
         <b-col class="col-12 col-md-4">
             <div class="box text-left">
-                <b-badge class="noselect tag" v-for="tag in properties.tags" :key="tag" :variant="variant(tag)">{{tag}}</b-badge>
+                <b-badge class="noselect tag" variant="success">{{version}}</b-badge>
+
+                <b-badge class="noselect tag" v-for="tag in properties.tags"
+                :key="tag" :variant="variant(tag)" v-b-tooltip.hover="get_tips(tag)">{{tag}}</b-badge>
             </div>
         </b-col>
         <b-col class="col-12 col-md-2">
@@ -31,6 +33,9 @@ export default {
             if (tag === '过时') {
                 return 'danger';
             }
+            if (tag === '即将过时') {
+                return 'warning';
+            }
             if (tag === '预览版') {
                 return 'success';
             }
@@ -38,6 +43,18 @@ export default {
                 return 'warning';
             }
             return 'secondary';
+        },
+        get_tips: function(tag) {
+            if (tag === '过时') {
+                return '在最新正式版失效';
+            }
+            if (tag === '即将过时') {
+                return '在最新预览版失效';
+            }
+            if (tag === '预览版') {
+                return '仅在预览版有效';
+            }
+            return '';
         }
     },
     computed: {
@@ -61,11 +78,15 @@ export default {
                                     supported by Chrome and Opera */
 }
 
+.title {
+    color: #16754a;
+}
+
 .thread {
-    margin-top: 0.75em;
-    margin-bottom: 0.75em;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 }
 
 .box {
@@ -76,7 +97,6 @@ export default {
 .tag {
     margin-right: 0.5em;
     margin-bottom: 0.5em;
-    font-size: 1em;
 }
 
 </style>

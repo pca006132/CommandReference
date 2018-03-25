@@ -10,8 +10,8 @@
                     <b-nav-item to="#words">常用字词表</b-nav-item>
                     <b-nav-item to="https://github.com/pca006132/CommandReference">GitHub</b-nav-item>
                     <b-nav-item to="#searchbar" class="d-md-none">搜索</b-nav-item>
-                    <b-nav-item-dropdown text="章节" right>
-                        <b-dropdown-item v-for="category in categories" :href="'#' + category[1]" :key="category[1]">
+                    <b-nav-item-dropdown variant="dark" type="dark" text="分类" right>
+                        <b-dropdown-item variant="dark" type="dark" v-for="category in categories" :href="'#' + category[1]" :key="category[1]">
                             {{category[0]}}
                         </b-dropdown-item>
                     </b-nav-item-dropdown>
@@ -41,7 +41,8 @@
                             各教程及生成器作者更可以在此宣传各位的作品！
                         </p>
                         <p>
-                            命令资源大全（原新人手册）进行了大量更新，现在急需各位帮助更新！详情请点击
+                            命令资源大全（原新人手册）进行了大量更新，现在急需各位帮助更新！<br />
+                            详情请点击
                             <a href="https://github.com/pca006132/CommandReference">命令资源大全(GitHub)</a>。
                         </p>
                     </div>
@@ -130,6 +131,37 @@
             position: sticky;
             top: 5em;
         }
+    }
+
+    .bg-dark .dropdown-menu {
+        min-width: 200px;
+        padding: 5px 0;
+        margin: 2px 0 0;
+        background-color: #343a40 !important;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    }
+
+    .bg-dark .dropdown-menu .divider {
+        border: 1px solid rgba(0, 0, 0, 0.8);
+    }
+    .bg-dark .dropdown-menu > a {
+        padding: 6px 20px;
+        color: rgba(255,255,255,.5);
+    }
+    .bg-dark .dropdown-menu > a:hover,
+    .bg-dark .dropdown-menu > a:focus {
+        color: rgba(255,255,255,.75);
+        background-color: #343a40 !important;
+        text-decoration: none;
+    }
+    .bg-dark .dropdown-menu > a,
+    .bg-dark .dropdown-menu > a:hover,
+    .bs-dark .dropdown-menu > a:focus {
+        background-color: #343a40 !important;
+        text-decoration: none;
+        outline: 0;
     }
 
     .card {

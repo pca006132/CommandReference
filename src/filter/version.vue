@@ -25,7 +25,7 @@ export default {
         options: function () {
             let opts = [];
             opts.push('任意版本');
-            for (let i = this.$props.min; i <= this.$props.max; i++) {
+            for (let i = this.$props.max; i >= this.$props.min; i--) {
                 opts.push('1.' + i.toString());
             }
             return opts;
