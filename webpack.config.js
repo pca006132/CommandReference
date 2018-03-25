@@ -42,8 +42,11 @@ module.exports = {
         loader: 'style-loader!css-loader'
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader'
+        test: /\.(html|png)$/,
+        loader: "file-loader?name=[path][name].[ext]",
+        options: {
+          useRelativePath: true
+        }
       }
     ]
   },
