@@ -4,7 +4,7 @@
   "description": "Chinese Minecraft Command Reference",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --open --mode development",
+    "dev": "webpack-dev-server --open --hot --mode development",
     "build": "webpack --progress --hide-modules --mode production",
     "check": "node check.js"
   },

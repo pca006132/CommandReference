@@ -57,8 +57,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: './dist',
-    noInfo: true,
-    hot: true
+    noInfo: true
   },
   performance: {
     hints: false
