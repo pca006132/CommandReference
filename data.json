@@ -98,6 +98,9 @@
         "min": 8,
         "max": 13
     },
+    "adv": {
+
+    },
     "threads": {
         "http://www.mcbbs.net/thread-787422-1-1.html": {
             "title": "NBT操作：从入门到mjsb",

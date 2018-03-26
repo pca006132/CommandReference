@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --open --hot --mode development",
     "build": "webpack --progress --hide-modules --mode production",
-    "check": "node check.js"
+    "check": "node check.js",
+    "gh-pages": "git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",

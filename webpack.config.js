@@ -8,10 +8,13 @@ module.exports = {
     'bootstrap-vue': 'bootstrapVue',
     jquery: '$'
   },
-  entry: './src/main.js',
+  entry: {
+    main: './src/main.js',
+    tool: './src/tool.js'
+  },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'build.js'
+    filename: '[name].js'
   },
   module: {
     rules: [

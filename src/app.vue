@@ -8,6 +8,7 @@
             <b-collapse is-nav="true" id="nav_collapse">
                 <b-navbar-nav>
                     <b-nav-item to="#words">常用字词表</b-nav-item>
+                    <b-nav-item to="./tool.html">添加帖子工具</b-nav-item>
                     <b-nav-item to="https://github.com/pca006132/CommandReference">GitHub</b-nav-item>
                     <b-nav-item to="#searchbar" class="d-md-none">搜索</b-nav-item>
                     <b-nav-item-dropdown variant="dark" type="dark" text="分类" right>
@@ -32,7 +33,7 @@
                 <b-col class="col-12 col-md-3 order-md-first" id="searchbar">
                     <hr class="d-md-none" />
                     <search v-on:update="update_title"></search>
-                    <tags :tags="tags" v-on:update="update_tags"></tags>
+                    <tags title="筛选 Tag" :tags="tags" v-on:update="update_tags"></tags>
                     <version :min="version_min" :max="version_max" v-on:update="update_version"></version>
                 </b-col>
             </b-row>

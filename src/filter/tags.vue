@@ -1,5 +1,5 @@
 <template>
-   <b-card title="筛选Tag" >
+   <b-card :title="title" >
         <b-badge class="noselect" v-on:click="toggle" variant="light" v-for="tag in tags" :key="tag">{{tag}}</b-badge>
    </b-card>
 </template>
@@ -8,11 +8,17 @@
 export default {
     name: 'tag_filter',
     props: {
-        tags: Array
+        tags: Array,
+        maximum: Number,
+        title: String
     },
     methods: {
         toggle: function(event) {
             if ($(event.target).hasClass('badge-light')) {
+                if (this.maximum && this.$data.filter.length === this.maximum) {
+                    return;
+                }
+
                 $(event.target).removeClass('badge-light');
                 $(event.target).addClass('badge-secondary');
                 this.$data.filter.push($(event.target).text());
