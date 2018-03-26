@@ -4,6 +4,8 @@
 本repo主要用作储存相关资料及索引页面，欢迎提交Pull Request更新资料。[资料格式](/format.md)
 
 > 尚未更新完毕
+>
+> 欢迎使用 [帖子资料填写工具](https://pca006132.github.io/CommandReference/tool.html) 帮助录入帖子！
 
 ## 录入要求
 * 教程

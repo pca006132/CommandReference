@@ -24,6 +24,8 @@ adv部分用作带图宣传，帖子的recommended必须大于等于1，才能�
 
 可以使用 `npm run check` 命令检查格式是否正确。
 
+> 如果觉得帖子的 tag 和分类很麻烦的话，可以使用 [帖子资料填写工具](https://pca006132.github.io/CommandReference/tool.html) 帮助生成资料
+
 ## 主页设计
 主页应被分为以下部分:
 * 命令快讯
