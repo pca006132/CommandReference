@@ -2,6 +2,15 @@
     <b-container>
         <h1>很简单很简单的帖子资料生成器</h1>
         <b-row>
+            <b-col>
+                <p>
+                    注意，使用此生成器前亦应先阅读
+                    <a href="https://github.com/pca006132/CommandReference/blob/master/format.md" target="_blank">资料格式</a>。
+                    里面说明了各种标签和类型的含义和用法。
+                </p>
+            </b-col>
+        </b-row>
+        <b-row>
             <b-col><b-form-input v-model="title" type="text" placeholder="帖子标题"></b-form-input></b-col>
         </b-row>
         <b-row>
