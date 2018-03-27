@@ -147,6 +147,15 @@
             "version-max": 12,
             "last-update": "2018-03-24",
             "recommended": 1
+        },
+        "http://www.whatname.top/villagertool.php": {
+            "title": "自定义村民生成器",
+            "tags": ["其他生成器/资源", "自定义生成器", "NBT"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2018-03-18",
+            "recommended": 1
         }
     }
 }
