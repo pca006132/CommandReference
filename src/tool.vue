@@ -108,7 +108,7 @@ export default {
                 'version-min': parseInt(this.ver_min.substring(2)),
                 'version-max': parseInt(this.ver_max.substring(2)),
                 'last-update': this.last_update,
-                recommended: this.recommended
+                recommended: parseInt(this.recommended)
             })
         },
         versions() {
