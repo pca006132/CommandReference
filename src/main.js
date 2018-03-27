@@ -18,7 +18,13 @@ $.get("https://raw.githubusercontent.com/pca006132/CommandReference/master/data.
                 words: data["common-words"],
                 pics: data.adv
             }
-        })
+        }),
+        mounted() {
+            let element = this.$refs[window.location.hash];
+            if (element) {
+                window.scrollTo(element.offsetTop);
+            }
+        }
     })
 })
 

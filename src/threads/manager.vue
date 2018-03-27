@@ -1,7 +1,10 @@
 <template>
     <div class="categories">
         <hr />
-        <category v-for="cat in categories[0]" :key="cat[1]" :header="cat[0]" :id="cat[1]" :sorted="categories[1][cat[0]]" :threads="threads" ></category>
+        <div v-for="cat in categories[0]" :key="cat[1]">
+            <offset :name="cat[1]"/>
+            <category :header="cat[0]" :sorted="categories[1][cat[0]]" :threads="threads" ></category>
+        </div>
     </div>
 </template>
 
@@ -11,6 +14,7 @@
 */
 
 import category_component from './category.vue';
+import offset from '../util/offset.vue';
 
 function sort_threads(threads) {
     return Object.keys(threads).sort((a, b)=> {
@@ -117,7 +121,8 @@ function filter(sorted_categories, categories, threads, predicate) {
 export default {
     name: 'category_manager',
     components: {
-        category: category_component
+        category: category_component,
+        offset: offset
     },
     props: {
         threads: Array,

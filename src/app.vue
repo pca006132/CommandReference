@@ -26,12 +26,14 @@
                     <adv :pics="pics"></adv>
                     <manager :threads="threads" :title="title" :tags="filter_tags" :version="version" v-on:update="update_categories"></manager>
                     <hr />
-                    <h3 id="words">常用字词表</h3>
+                    <offset name="words" />
+                    <h3>常用字词表</h3>
                     <b-table class="text-left" striped hover :items="words"></b-table>
                 </b-col>
 
-                <b-col class="col-12 col-md-3 order-md-first" id="searchbar">
+                <b-col class="col-12 col-md-3 order-md-first" id="sidebar">
                     <hr class="d-md-none" />
+                    <offset name="searchbar" />
                     <search v-on:update="update_title"></search>
                     <tags title="筛选 Tag" :tags="tags" v-on:update="update_tags"></tags>
                     <version :min="version_min" :max="version_max" v-on:update="update_version"></version>
@@ -48,6 +50,7 @@
     import manager from './threads/manager.vue';
     import intro from './intro.vue';
     import adv from './adv.vue';
+    import offset from './util/offset.vue';
 
     export default {
         name: 'app',
@@ -57,7 +60,8 @@
             version: version_selector,
             manager: manager,
             intro: intro,
-            adv: adv
+            adv: adv,
+            offset: offset
         },
         props: {
             version_min: Number,
@@ -105,7 +109,7 @@
         padding: 1.5em;
     }
 
-    #searchbar {
+    #sidebar {
         @media only screen and (min-width: 768px) {
             border-right: 1px solid gray;
             height: 90vh;
