@@ -20,10 +20,13 @@ $.get("https://raw.githubusercontent.com/pca006132/CommandReference/master/data.
             }
         }),
         mounted() {
-            let element = this.$refs[window.location.hash];
-            if (element) {
-                window.scrollTo(element.offsetTop);
-            }
+            this.$nextTick(function() {
+                if (window.location.hash.length != 0) {
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top
+                    }, 50);
+                }
+            })
         }
     })
 })
