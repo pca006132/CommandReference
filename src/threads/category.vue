@@ -53,6 +53,10 @@ export default {
                                     supported by Chrome and Opera */
 }
 
+.category-header.collapsed {
+    border-bottom: none;
+}
+
 .category-header.collapsed .when-opened {
     display: none;
 }
@@ -60,7 +64,6 @@ export default {
 .category-header:not(.collapsed) .when-closed {
     display: none;
 }
-
 
 .category .card-body {
     padding-left: 0.2em;

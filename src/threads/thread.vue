@@ -16,11 +16,15 @@
         <b-col class="col-12 col-md-4">
             <b-row>
                 <b-col v-if="properties['authors'] && properties['authors'].length > 0">
-                    {{properties['authors'][0]}}
-                    <div class="d-inline" v-if="properties['authors'].length > 1">
-                        <b-button variant="link" size="sm" class="hint">
-                            <span class="authors">{{properties['authors'].slice(1).map(a=>', ' + a).join("")}}</span>
-                        </b-button>
+                    <div class="box">
+                    <span class="align-middle">
+                        {{properties['authors'][0]}}
+                        <div class="d-inline" v-if="properties['authors'].length > 1">
+                            <b-button variant="link" size="sm" class="hint">
+                                <span class="authors">{{properties['authors'].slice(1).map(a=>', ' + a).join("")}}</span>
+                            </b-button>
+                        </div>
+                    </span>
                     </div>
                 </b-col>
                 <b-col>
