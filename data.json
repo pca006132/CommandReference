@@ -132,15 +132,17 @@
         "http://www.mcbbs.net/thread-778336-1-1.html": {
             "title": "[教程] [18w05a]新命令/bossbar 自定义boss血条实现指向效果 [已稳定]",
             "tags": [
-                "几何",
                 "计算",
+                "几何",
+                "实例",
                 "预览版"
             ],
-            "category": "命令/格式教程",
+            "category": "算法逻辑",
             "version-min": 13,
             "version-max": 13,
             "last-update": "2018-02-02",
-            "recommended": 0},
+            "recommended": 0
+        },
         "http://www.mcbbs.net/thread-787422-1-1.html": {
             "title": "NBT操作：从入门到mjsb",
             "last-update": "2018-03-24",
