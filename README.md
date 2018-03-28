@@ -3,7 +3,7 @@
 
 本repo主要用作储存相关资料及索引页面，欢迎提交Pull Request更新资料。[资料格式](/format.md)
 
-> 尚未更新完毕
+> 尚未更新完毕（新人手册里除推荐部分、生成器及资源列表、常用网站以外的分类均未录入）
 >
 > 欢迎使用 [帖子资料填写工具](https://pca006132.github.io/CommandReference/tool.html) 帮助录入帖子！
 
