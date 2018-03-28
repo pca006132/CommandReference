@@ -46,10 +46,21 @@ function categorize(sorted_urls, threads) {
         return list.slice(0, end);
     }
     let categories = {};
-    let sorted_categories = ["命令快讯", "新人必读"];
+    let sorted_categories = ["命令快讯", "编辑推荐"];
 
-    categories["命令快讯"] = slice2(slice2(sorted_urls, i=>threads[sorted_urls[i]].recommended < 1)
+    categories["编辑推荐"] = slice2(slice2(sorted_urls, i=>threads[sorted_urls[i]].recommended < 1)
         .sort((a, b)=> {
+            let i = threads[a]["tags"].indexOf("基础");
+            let j = threads[b]["tags"].indexOf("基础");
+
+            if ((i != -1) == (j != -1)) {
+                if (i != -1) {
+                    return -1;
+                } else {
+                    return 1;
+                }
+            }
+
             if (threads[a]["last-update"] > threads[b]["last-update"]) {
                 return -1;
             }

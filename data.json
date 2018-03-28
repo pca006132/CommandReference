@@ -92,6 +92,7 @@
         "实例",
         "过时",
         "即将过时",
+        "部分过时",
         "预览版",
         "英语"
     ],
@@ -106,7 +107,7 @@
         "http://www.mcbbs.net/thread-787422-1-1.html": {
             "title": "NBT操作：从入门到mjsb",
             "last-update": "2018-03-24",
-            "tags": ["基础", "命令介绍", "NBT", "预览版"],
+            "tags": ["进阶", "命令介绍", "NBT", "预览版"],
             "category": "命令/格式教程",
             "version-min": 13,
             "version-max": 13,
@@ -141,7 +142,7 @@
         },
         "http://www.ganxiaozhe.com/mc/entitytool.html": {
             "title": "MINECRAFT ENTITY TOOL 实体，生物蛋，刷怪笼生成器",
-            "tags": ["其他生成器/资源", "自定义生成器", "NBT"],
+            "tags": ["即将过时", "其他生成器/资源", "自定义生成器", "NBT"],
             "category": "生成器/资源",
             "version-min": 10,
             "version-max": 12,
@@ -150,12 +151,165 @@
         },
         "http://www.whatname.top/villagertool.php": {
             "title": "自定义村民生成器",
-            "tags": ["其他生成器/资源", "自定义生成器", "NBT"],
+            "tags": ["即将过时", "其他生成器/资源", "自定义生成器", "NBT"],
             "category": "生成器/资源",
             "version-min": 8,
             "version-max": 12,
             "last-update": "2018-03-18",
             "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-533943-1-1.html": {
+            "title": "懒癌卫士PCB",
+            "tags": ["即将过时", "其他生成器/资源", "OOC生成"],
+            "category": "生成器/资源",
+            "version-min": 9,
+            "version-max": 12,
+            "last-update": "2017-06-17",
+            "recommended": 0
+        },
+        "http://www.mcbbs.net/thread-770198-1-1.html": {
+            "title": "新版本execute嵌套的改变",
+            "tags": ["预览版", "基础", "命令机制"],
+            "category": "游戏/命令机制",
+            "version-min": 13,
+            "version-max": 13,
+            "last-update": "2017-11-28",
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-771638-1-1.html": {
+            "title": "使用局部坐标做到找到玩家指的地方",
+            "tags": ["进阶", "预览版", "命令机制"],
+            "category": "游戏/命令机制",
+            "version-min": 13,
+            "version-max": 13,
+            "last-update": "2017-12-12",
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-772939-1-1.html": {
+            "title": "免穷举做到实体向前移动",
+            "tags": ["预览版", "游戏机制", "进阶"],
+            "category": "游戏/命令机制",
+            "version-min": 13,
+            "version-max": 13,
+            "last-update": "2017-12-28",
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-440268-1-2.html": {
+            "title": "1.9+命令格式/用法",
+            "tags": ["基础", "即将过时", "部分过时", "命令介绍"],
+            "category": "命令/格式教程",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2017-08-09",
+            "recommended": 2
+        },
+        "http://www.mcbbs.net/thread-625526-1-1.html": {
+            "title": "基础游戏机制",
+            "tags": ["基础", "游戏机制"],
+            "category": "游戏/命令机制",
+            "version-min": 8,
+            "version-max": 13,
+            "last-update": "2016-08-23",
+            "recommended": 2
+        },
+        "http://www.mcbbs.net/thread-441625-1-1.html": {
+            "title": "实体nbt",
+            "tags": ["过时", "NBT"],
+            "category": "NBT介绍",
+            "version-min": 8,
+            "version-max": 8,
+            "last-update": "2016-07-08",
+            "recommended": 0
+        },
+        "http://www.mcbbs.net/thread-784662-1-1.html": {
+            "title": "原版模组开发入门教程",
+            "tags": ["进阶", "原版模组", "人生经验", "实例", "预览版"],
+            "category": "系统制作技巧",
+            "version-min": 13,
+            "version-max": 13,
+            "last-update": "2018-03-22",
+            "recommended": 2
+        },
+        "http://www.mcbbs.net/thread-786168-1-1.html": {
+            "title": "热带鱼的Variant",
+            "tags": ["预览版", "NBT"],
+            "category": "NBT介绍",
+            "version-min": 13,
+            "version-max": 13,
+            "last-update": "2018-03-08",
+            "recommended": 0
+        },
+        "http://www.mcbbs.net/thread-771628-1-1.html": {
+            "title": "相对坐标与局部坐标的转换",
+            "tags": ["预览版", "计算", "几何", "命令机制"],
+            "category": "其他",
+            "version-min": 13,
+            "version-max": 13,
+            "last-update": "2017-12-12",
+            "recommended": 0
+        },
+        "https://ruhuasiyu.github.io/CraftingPlusPlus/": {
+            "title": "更多的合成 Crafting++",
+            "tags": ["实例", "原版模组"],
+            "category": "作品例子",
+            "version-min": 12,
+            "version-max": 13,
+            "last-update": "2018-03-24",
+            "recommended": 0
+        },
+        "http://www.mcbbs.net/thread-692632-1-1.html": {
+            "title": "Notepad++ 的 mcfunction 语言格式",
+            "tags": ["其他生成器/资源"],
+            "category": "生成器/资源",
+            "version-min": 12,
+            "version-max": 13,
+            "last-update": "2018-02-27",
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-691100-1-3.html": {
+            "title": "函数命令系统：当命令脱离命令方块",
+            "tags": ["进阶", "命令机制", "实例", "部分过时"],
+            "category": "系统制作技巧",
+            "version-min": 12,
+            "version-max": 13,
+            "last-update": "2017-05-08",
+            "recommended": 2
+        },
+        "http://www.mcbbs.net/thread-773456-1-1.html": {
+            "title": "原版枪械",
+            "tags": ["命令机制", "实例", "原版模组", "预览版"],
+            "category": "作品例子",
+            "version-min": 13,
+            "version-max": 13,
+            "last-update": "2018-01-25",
+            "recommended": 0
+        },
+        "http://www.mcbbs.net/thread-735127-1-1.html": {
+            "title": "在原版添加自定义自然生成建筑",
+            "tags": ["实例", "原版模组", "即将过时", "算法"],
+            "category": "作品例子",
+            "version-min": 12,
+            "version-max": 12,
+            "last-update": "2017-11-05",
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-654787-1-1.html": {
+            "title": "原版ooc，冰之法杖",
+            "tags": ["实例", "原版模组", "游戏系统", "即将过时"],
+            "category": "作品例子",
+            "version-min": 11,
+            "version-max": 12,
+            "last-update": "2016-12-17",
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-772950-1-1.html": {
+            "title": " 画个球 ",
+            "tags": ["预览版", "进阶", "算法", "几何", "实例"],
+            "category": "作品例子",
+            "version-min": 13,
+            "version-max": 13,
+            "last-update": "2017-12-26",
+            "recommended": 0
         }
     }
 }
