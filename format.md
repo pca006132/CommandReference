@@ -47,6 +47,7 @@ adv部分用作带图宣传，帖子的recommended必须大于等于1，才能�
 * `version-min`: 帖子最低适用版本，参见下方版本部分。（如果没有版本限制则不需要）
 * `version-max`: 帖子最高适用版本，参见下方版本部分。（如果没有版本限制则不需要）
 * `recommended`: 帖子被推荐程度，参见下方推荐指南。
+* `authors`: 帖子作者列表，第一个为主要作者，如不适用则可忽略。
 
 例子:
 ```json
@@ -57,7 +58,10 @@ adv部分用作带图宣传，帖子的recommended必须大于等于1，才能�
     "category": "其他",
     "version-min": 8,
     "version-max": 13,
-    "recommended": 2
+    "recommended": 2,
+    "authors": [
+        "pca006132"
+    ]
 }
 ```
 

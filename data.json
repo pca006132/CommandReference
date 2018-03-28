@@ -139,7 +139,10 @@
             "version-min": 13,
             "version-max": 13,
             "last-update": "2018-02-02",
-            "recommended": 0
+            "recommended": 0,
+            "authors": [
+                "switefaster"
+            ]
         },
         "http://www.mcbbs.net/thread-787422-1-1.html": {
             "title": "NBT操作：从入门到mjsb",
@@ -153,7 +156,10 @@
             "category": "命令/格式教程",
             "version-min": 13,
             "version-max": 13,
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "SPGoding"
+            ]
         },
         "http://www.mcbbs.net/thread-786316-1-1.html": {
             "title": "鱼乐无穷 —— 热带鱼生成器",
@@ -165,7 +171,10 @@
             "category": "生成器/资源",
             "version-min": 13,
             "version-max": 13,
-            "recommended": 0
+            "recommended": 0,
+            "authors": [
+                "SPGoding"
+            ]
         },
         "http://www.mcbbs.net/thread-785724-1-1.html": {
             "title": "原版“数据生成器”——获取各种ID及命令格式",
@@ -177,7 +186,10 @@
             "category": "其他",
             "version-min": 13,
             "version-max": 13,
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "SPGoding"
+            ]
         },
         "http://www.mcbbs.net/thread-779319-1-1.html": {
             "title": "石锤！原版自瞄！",
@@ -191,7 +203,10 @@
             "category": "作品例子",
             "version-min": 13,
             "version-max": 13,
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "SPGoding"
+            ]
         },
         "http://www.ganxiaozhe.com/mc/entitytool.html": {
             "title": "MINECRAFT ENTITY TOOL 实体，生物蛋，刷怪笼生成器",
@@ -205,7 +220,10 @@
             "version-min": 10,
             "version-max": 12,
             "last-update": "2018-03-24",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "甘小蔗"
+            ]
         },
         "http://www.whatname.top/villagertool.php": {
             "title": "自定义村民生成器",
@@ -219,7 +237,10 @@
             "version-min": 8,
             "version-max": 12,
             "last-update": "2018-03-18",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "what_name"
+            ]
         },
         "http://www.mcbbs.net/thread-533943-1-1.html": {
             "title": "懒癌卫士PCB",
@@ -232,7 +253,10 @@
             "version-min": 9,
             "version-max": 12,
             "last-update": "2017-06-17",
-            "recommended": 0
+            "recommended": 0,
+            "authors": [
+                "pca006132"
+            ]
         },
         "http://www.mcbbs.net/thread-770198-1-1.html": {
             "title": "新版本execute嵌套的改变",
@@ -245,7 +269,10 @@
             "version-min": 13,
             "version-max": 13,
             "last-update": "2017-11-28",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "SYL"
+            ]
         },
         "http://www.mcbbs.net/thread-771638-1-1.html": {
             "title": "使用局部坐标做到找到玩家指的地方",
@@ -258,7 +285,10 @@
             "version-min": 13,
             "version-max": 13,
             "last-update": "2017-12-12",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "chyx"
+            ]
         },
         "http://www.mcbbs.net/thread-772939-1-1.html": {
             "title": "免穷举做到实体向前移动",
@@ -271,7 +301,10 @@
             "version-min": 13,
             "version-max": 13,
             "last-update": "2017-12-28",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "skeleton小白"
+            ]
         },
         "http://www.mcbbs.net/thread-440268-1-2.html": {
             "title": "命令格式/用法",
@@ -285,7 +318,10 @@
             "version-min": 8,
             "version-max": 12,
             "last-update": "2017-08-09",
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "End-Enderman"
+            ]
         },
         "http://www.mcbbs.net/thread-625526-1-1.html": {
             "title": "基础游戏机制",
@@ -297,7 +333,10 @@
             "version-min": 8,
             "version-max": 13,
             "last-update": "2016-08-23",
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "玄素"
+            ]
         },
         "http://www.mcbbs.net/thread-441625-1-1.html": {
             "title": "实体nbt",
@@ -309,7 +348,10 @@
             "version-min": 8,
             "version-max": 8,
             "last-update": "2016-07-08",
-            "recommended": 0
+            "recommended": 0,
+            "authors": [
+                "End-Enderman"
+            ]
         },
         "http://www.mcbbs.net/thread-784662-1-1.html": {
             "title": "原版模组开发入门教程",
@@ -324,7 +366,10 @@
             "version-min": 13,
             "version-max": 13,
             "last-update": "2018-03-22",
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "ruhuasiyu"
+            ]
         },
         "http://www.mcbbs.net/thread-786168-1-1.html": {
             "title": "热带鱼的Variant",
@@ -336,7 +381,10 @@
             "version-min": 13,
             "version-max": 13,
             "last-update": "2018-03-08",
-            "recommended": 0
+            "recommended": 0,
+            "authors": [
+                "ruhuasiyu"
+            ]
         },
         "http://www.mcbbs.net/thread-771628-1-1.html": {
             "title": "相对坐标与局部坐标的转换",
@@ -349,7 +397,10 @@
             "version-min": 13,
             "version-max": 13,
             "last-update": "2017-12-12",
-            "recommended": 0
+            "recommended": 0,
+            "authors": [
+                "ruhuasiyu"
+            ]
         },
         "https://ruhuasiyu.github.io/CraftingPlusPlus/": {
             "title": "更多的合成 Crafting++",
@@ -361,7 +412,10 @@
             "version-min": 12,
             "version-max": 13,
             "last-update": "2018-03-24",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "ruhuasiyu"
+            ]
         },
         "http://www.mcbbs.net/thread-692632-1-1.html": {
             "title": "Notepad++ 的 mcfunction 语言格式",
@@ -372,7 +426,10 @@
             "version-min": 12,
             "version-max": 13,
             "last-update": "2018-02-27",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "ruhuasiyu"
+            ]
         },
         "http://www.mcbbs.net/thread-691100-1-3.html": {
             "title": "函数命令系统：当命令脱离命令方块",
@@ -386,7 +443,10 @@
             "version-min": 12,
             "version-max": 13,
             "last-update": "2017-05-08",
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "秋一"
+            ]
         },
         "http://www.mcbbs.net/thread-773456-1-1.html": {
             "title": "原版枪械",
@@ -400,7 +460,10 @@
             "version-min": 13,
             "version-max": 13,
             "last-update": "2018-01-25",
-            "recommended": 0
+            "recommended": 0,
+            "authors": [
+                "pineapple_"
+            ]
         },
         "http://www.mcbbs.net/thread-735127-1-1.html": {
             "title": "在原版添加自定义自然生成建筑",
@@ -414,7 +477,10 @@
             "version-min": 12,
             "version-max": 12,
             "last-update": "2017-11-05",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "pineapple_"
+            ]
         },
         "http://www.mcbbs.net/thread-654787-1-1.html": {
             "title": "原版ooc，冰之法杖",
@@ -428,7 +494,10 @@
             "version-min": 11,
             "version-max": 12,
             "last-update": "2016-12-17",
-            "recommended": 0
+            "recommended": 0,
+            "authors": [
+                "pineapple_"
+            ]
         },
         "http://www.mcbbs.net/thread-772950-1-1.html": {
             "title": "画个球 ",
@@ -443,7 +512,10 @@
             "version-min": 13,
             "version-max": 13,
             "last-update": "2017-12-26",
-            "recommended": 0
+            "recommended": 0,
+            "authors": [
+                "ruhuasiyu"
+            ]
         },
         "http://www.mcbbs.net/thread-631165-1-1.html": {
             "title": "命令简介",
@@ -458,7 +530,10 @@
             "version-min": 8,
             "version-max": 12,
             "last-update": "2016-09-05",
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "玄素"
+            ]
         },
         "https://commandtutorials.neocities.org/tutorials/logic/logical_operation.html": {
             "title": "逻辑运算",
@@ -471,7 +546,10 @@
             "category": "算法逻辑",
             "version-min": 9,
             "version-max": 12,
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "pca006132"
+            ]
         },
         "http://www.mcbbs.net/thread-433476-1-1.html": {
             "title": "命令纠错FAQ",
@@ -486,7 +564,10 @@
             "version-min": 8,
             "version-max": 12,
             "last-update": "2016-06-10",
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "PotatoMaster101"
+            ]
         },
         "http://www.mcbbs.net/thread-553550-1-1.html": {
             "title": "命令逻辑FAQ",
@@ -500,7 +581,10 @@
             "version-min": 9,
             "version-max": 12,
             "last-update": "2016-02-08",
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "pca006132"
+            ]
         },
         "http://www.mcbbs.net/thread-210012-1-1.html": {
             "title": "PotatoMaster101实例教程索引",
@@ -516,7 +600,10 @@
             "version-min": 8,
             "version-max": 12,
             "last-update": "2017-06-29",
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "PotatoMaster101"
+            ]
         },
         "http://www.mcbbs.net/thread-604209-1-1.html": {
             "title": "命令工具箱",
@@ -530,7 +617,10 @@
             "version-min": 8,
             "version-max": 12,
             "last-update": "2017-08-27",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "YJC_082"
+            ]
         },
         "http://www.mcbbs.net/thread-580119-1-1.html": {
             "title": "AS pose生成器",
@@ -543,7 +633,10 @@
             "version-min": 8,
             "version-max": 12,
             "last-update": "2018-01-28",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "MsYqgzt"
+            ]
         },
         "https://mrgarretto.com/armorstand/": {
             "title": "AS动画生成器",
@@ -556,7 +649,10 @@
             "category": "生成器/资源",
             "version-min": 8,
             "version-max": 10,
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "MrGarretto"
+            ]
         },
         "https://www.minecraftjson.com/": {
             "title": "JSON文本生成器",
@@ -567,7 +663,10 @@
             "category": "生成器/资源",
             "version-min": 8,
             "version-max": 13,
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "ezekielelin"
+            ]
         },
         "http://www.mcbbs.net/thread-381131-1-3.html": {
             "title": "MCH——命令生成器",
@@ -582,7 +681,10 @@
             "version-min": 8,
             "version-max": 13,
             "last-update": "2018-03-17",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "IceFreeze"
+            ]
         },
         "http://mcstacker.bimbimma.com/": {
             "title": "MCStacker——实体生成器",
@@ -596,7 +698,10 @@
             "version-min": 8,
             "version-max": 12,
             "last-update": "2018-03-17",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "PyroStunts"
+            ]
         },
         "https://mrgarretto.com/cmdcombiner": {
             "title": "OOC生成器",
@@ -608,7 +713,10 @@
             "category": "生成器/资源",
             "version-min": 8,
             "version-max": 12,
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "MrGarretto"
+            ]
         },
         "https://bimbimma.com/minecraftmurals/": {
             "title": "图像方块转换器",
@@ -622,7 +730,10 @@
             "version-min": 8,
             "version-max": 13,
             "last-update": "2018-03-25",
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "PyroStunts"
+            ]
         },
         "https://freshcoal.com/": {
             "title": "头颅资料库",
@@ -648,7 +759,10 @@
             "category": "生成器/资源",
             "version-min": 12,
             "version-max": 13,
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "CodeCrafted"
+            ]
         },
         "http://skylinerw.com/": {
             "title": "Skylinerw生成器、资源列表",
@@ -662,7 +776,10 @@
             "category": "生成器/资源",
             "version-min": 9,
             "version-max": 12,
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "Skylinerw"
+            ]
         },
         "http://minecraft.tools/en/": {
             "title": "网上自定义命令生成器合集",
@@ -690,7 +807,10 @@
             "version-min": 8,
             "version-max": 12,
             "last-update": "2018-01-22",
-            "recommended": 2
+            "recommended": 2,
+            "authors": [
+                "Jaquadro"
+            ]
         },
         "http://blockbench.net/": {
             "title": "BlockBench——方块模型编辑器",
@@ -702,7 +822,10 @@
             "category": "生成器/资源",
             "version-min": 8,
             "version-max": 13,
-            "recommended": 1
+            "recommended": 1,
+            "authors": [
+                "JannisX11"
+            ]
         },
         "https://minecraft-zh.gamepedia.com/%E5%91%BD%E4%BB%A4": {
             "title": "Wiki——命令",
