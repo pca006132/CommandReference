@@ -7,7 +7,7 @@
         </b-col>
         <b-col class="col-12 col-md-4">
             <div class="box text-left">
-                <b-badge class="noselect tag" variant="success">{{version}}</b-badge>
+                <b-badge class="noselect tag" v-if="properties['version-min']" variant="success">{{version}}</b-badge>
 
                 <b-badge class="noselect tag" v-for="tag in properties.tags"
                 :key="tag" :variant="variant(tag)" v-b-tooltip.hover="get_tips(tag)">{{tag}}</b-badge>
