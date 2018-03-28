@@ -195,7 +195,7 @@
             "recommended": 1
         },
         "http://www.mcbbs.net/thread-440268-1-2.html": {
-            "title": "1.9+命令格式/用法",
+            "title": "命令格式/用法",
             "tags": ["基础", "即将过时", "部分过时", "命令介绍"],
             "category": "命令/格式教程",
             "version-min": 8,
