@@ -36,7 +36,8 @@
         <hr />
         <b-row>
             <b-col sm="3"><label for="last-update">最后主要更新日期</label></b-col>
-            <b-col sm="9"><b-form-input type="date" id="last-update" v-model="last_update"></b-form-input></b-col>
+            <b-col sm="3"><b-form-checkbox v-model="no_update"></b-form-checkbox>不适用</b-col>
+            <b-col sm="6"><b-form-input :disabled="no_update" type="date" id="last-update" v-model="last_update"></b-form-input></b-col>
         </b-row>
         <hr />
         <b-row>
@@ -77,7 +78,8 @@ export default {
             recommended: 0,
             ver_min: '',
             ver_min: '',
-            last_update: ''
+            last_update: '',
+            no_update: false
         }
     },
     computed: {
@@ -94,7 +96,7 @@ export default {
             if (this.ver_min === '' || this.ver_max === '') {
                 return '错误: 请正确输入版本。';
             }
-            if (!date_time.exec(this.last_update)) {
+            if (!this.no_update && !date_time.exec(this.last_update)) {
                 return '错误: 请选择最后更新日期。';
             }
 
@@ -102,14 +104,14 @@ export default {
                 title: this.title,
                 tags: this.tag_list,
                 category: this.cat,
-                'version-min': parseInt(this.ver_min.substring(2)),
-                'version-max': parseInt(this.ver_max.substring(2)),
-                'last-update': this.last_update,
+                'version-min': (this.version_min === '不适用' || this.version_max === '不适用')? null : parseInt(this.ver_min.substring(2)),
+                'version-max': (this.version_min === '不适用' || this.version_max === '不适用')? null :parseInt(this.ver_max.substring(2)),
+                'last-update': this.no_update? null : this.last_update,
                 recommended: parseInt(this.recommended)
             })
         },
         versions() {
-            let versions = [];
+            let versions = ["不适用"];
             for (let i = this.version_max; i >= this.version_min; i--) {
                 versions.push('1.' + i.toString());
             }

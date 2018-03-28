@@ -83,6 +83,7 @@
         "人生经验",
         "游戏系统",
         "命令介绍",
+        "格式介绍",
         "原版模组",
         "地图作品",
         "概念验证",
@@ -311,24 +312,257 @@
             "last-update": "2017-12-26",
             "recommended": 0
         },
-        "http://www.mcbbs.net/thread-631165-1-1.html":{"title":"命令简介","tags":["基础","命令机制","命令介绍","人生经验","即将过时"],"category":"游戏/命令机制","version-min":8,"version-max":12,"last-update":"2016-09-05","recommended":2},
-        "https://commandtutorials.neocities.org/tutorials/logic/logical_operation.html":{"title":"逻辑运算","tags":["基础","算法","命令机制","即将过时"],"category":"算法逻辑","version-min":9,"version-max":12,"recommended":2},
-        "http://www.mcbbs.net/thread-433476-1-1.html":{"title":"命令纠错FAQ","tags":["基础","命令机制","即将过时","游戏机制","人生经验"],"category":"游戏/命令机制","version-min":8,"version-max":12,"last-update":"2016-06-10","recommended":2},
-        "http://www.mcbbs.net/thread-553550-1-1.html":{"title":"命令逻辑FAQ","tags":["即将过时","人生经验","进阶","游戏机制"],"category":"游戏/命令机制","version-min":9,"version-max":12,"last-update":"2016-02-08","recommended":2},
-        "http://www.mcbbs.net/thread-210012-1-1.html":{"title":"PotatoMaster101实例教程索引","tags":["游戏机制","部分过时","即将过时","NBT","实例","基础"],"category":"教程索引","version-min":8,"version-max":12,"last-update":"2017-06-29","recommended":2},
-        "http://www.mcbbs.net/thread-604209-1-1.html":{"title":"命令工具箱","tags":["NBT","即将过时","自定义生成器","其他生成器/资源"],"category":"生成器/资源","version-min":8,"version-max":12,"last-update":"2017-08-27","recommended":1},
-        "http://www.mcbbs.net/thread-580119-1-1.html":{"title":"AS pose生成器","tags":["NBT","即将过时","其他生成器/资源"],"category":"生成器/资源","version-min":8,"version-max":12,"last-update":"2018-01-28","recommended":1},
-        "https://mrgarretto.com/armorstand/":{"title":"AS动画生成器","tags":["NBT","即将过时","其他生成器/资源","英语"],"category":"生成器/资源","version-min":8,"version-max":10,"recommended":1},
-        "https://www.minecraftjson.com/":{"title":"JSON文本生成器","tags":["其他生成器/资源","特技"],"category":"生成器/资源","version-min":8,"version-max":13,"recommended":1},
-        "http://www.mcbbs.net/thread-381131-1-3.html":{"title":"MCH——命令生成器","tags":["其他生成器/资源","自定义生成器","即将过时","NBT","特技"],"category":"生成器/资源","version-min":8,"version-max":13,"last-update":"2018-03-17","recommended":1},
-        "http://mcstacker.bimbimma.com/":{"title":"MCStacker——实体生成器","tags":["自定义生成器","即将过时","NBT","英语"],"category":"生成器/资源","version-min":8,"version-max":12,"last-update":"2018-03-17","recommended":1},
-        "https://mrgarretto.com/cmdcombiner":{"title":"OOC生成器","tags":["即将过时","英语","OOC生成"],"category":"生成器/资源","version-min":8,"version-max":12,"recommended":1},
-        "https://bimbimma.com/minecraftmurals/":{"title":"图像方块转换器","tags":["英语","OOC生成","其他生成器/资源","特技"],"category":"生成器/资源","version-min":8,"version-max":13,"last-update":"2018-03-25","recommended":1},
-        "https://freshcoal.com/":{"title":"头颅资料库","tags":["英语","其他生成器/资源","特技"],"category":"生成器/资源","version-min":8,"version-max":13,"recommended":1},
-        "https://codecrafted.net/blockdesigner":{"title":"自定义方块黑科技生成器","tags":["英语","其他生成器/资源","特技","黑科技","即将过时"],"category":"生成器/资源","version-min":12,"version-max":13,"recommended":1},
-        "http://skylinerw.com/":{"title":"Skylinerw生成器、资源列表","tags":["英语","其他生成器/资源","即将过时","自定义生成器","特技"],"category":"生成器/资源","version-min":9,"version-max":12,"recommended":1},
-        "http://minecraft.tools/en/":{"title":"网上自定义命令生成器合集","tags":["英语","其他生成器/资源","即将过时","自定义生成器","特技"],"category":"生成器/资源","version-min":9,"version-max":12,"recommended":1},
-        "http://www.mcbbs.net/thread-306895-1-1.html":{"title":"NBTExplorer——NBT文件编辑器","tags":["英语","其他生成器/资源","即将过时","NBT"],"category":"生成器/资源","version-min":8,"version-max":12,"last-update":"2018-01-22","recommended":2},
-        "http://blockbench.net/":{"title":"BlockBench——方块模型编辑器","tags":["英语","其他生成器/资源","特技"],"category":"生成器/资源","version-min":8,"version-max":13,"recommended":1}
+        "http://www.mcbbs.net/thread-631165-1-1.html": {
+            "title": "命令简介",
+            "tags": ["基础", "命令机制", "命令介绍", "人生经验", "即将过时"],
+            "category": "游戏/命令机制",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2016-09-05",
+            "recommended": 2
+        },
+        "https://commandtutorials.neocities.org/tutorials/logic/logical_operation.html": {
+            "title": "逻辑运算",
+            "tags": ["基础", "算法", "命令机制", "即将过时"],
+            "category": "算法逻辑",
+            "version-min": 9,
+            "version-max": 12,
+            "recommended": 2
+        },
+        "http://www.mcbbs.net/thread-433476-1-1.html": {
+            "title": "命令纠错FAQ",
+            "tags": ["基础", "命令机制", "即将过时", "游戏机制", "人生经验"],
+            "category": "游戏/命令机制",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2016-06-10",
+            "recommended": 2
+        },
+        "http://www.mcbbs.net/thread-553550-1-1.html": {
+            "title": "命令逻辑FAQ",
+            "tags": ["即将过时", "人生经验", "进阶", "游戏机制"],
+            "category": "游戏/命令机制",
+            "version-min": 9,
+            "version-max": 12,
+            "last-update": "2016-02-08",
+            "recommended": 2
+        },
+        "http://www.mcbbs.net/thread-210012-1-1.html": {
+            "title": "PotatoMaster101实例教程索引",
+            "tags": ["游戏机制", "部分过时", "即将过时", "NBT", "实例", "基础"],
+            "category": "教程索引",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2017-06-29",
+            "recommended": 2
+        },
+        "http://www.mcbbs.net/thread-604209-1-1.html": {
+            "title": "命令工具箱",
+            "tags": ["NBT", "即将过时", "自定义生成器", "其他生成器/资源"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2017-08-27",
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-580119-1-1.html": {
+            "title": "AS pose生成器",
+            "tags": ["NBT", "即将过时", "其他生成器/资源"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2018-01-28",
+            "recommended": 1
+        },
+        "https://mrgarretto.com/armorstand/": {
+            "title": "AS动画生成器",
+            "tags": ["NBT", "即将过时", "其他生成器/资源", "英语"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 10,
+            "recommended": 1
+        },
+        "https://www.minecraftjson.com/": {
+            "title": "JSON文本生成器",
+            "tags": ["其他生成器/资源", "特技"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 13,
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-381131-1-3.html": {
+            "title": "MCH——命令生成器",
+            "tags": ["其他生成器/资源", "自定义生成器", "即将过时", "NBT", "特技"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 13,
+            "last-update": "2018-03-17",
+            "recommended": 1
+        },
+        "http://mcstacker.bimbimma.com/": {
+            "title": "MCStacker——实体生成器",
+            "tags": ["自定义生成器", "即将过时", "NBT", "英语"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2018-03-17",
+            "recommended": 1
+        },
+        "https://mrgarretto.com/cmdcombiner": {
+            "title": "OOC生成器",
+            "tags": ["即将过时", "英语", "OOC生成"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 12,
+            "recommended": 1
+        },
+        "https://bimbimma.com/minecraftmurals/": {
+            "title": "图像方块转换器",
+            "tags": ["英语", "OOC生成", "其他生成器/资源", "特技"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 13,
+            "last-update": "2018-03-25",
+            "recommended": 1
+        },
+        "https://freshcoal.com/": {
+            "title": "头颅资料库",
+            "tags": ["英语", "其他生成器/资源", "特技"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 13,
+            "recommended": 1
+        },
+        "https://codecrafted.net/blockdesigner": {
+            "title": "自定义方块黑科技生成器",
+            "tags": ["英语", "其他生成器/资源", "特技", "黑科技", "即将过时"],
+            "category": "生成器/资源",
+            "version-min": 12,
+            "version-max": 13,
+            "recommended": 1
+        },
+        "http://skylinerw.com/": {
+            "title": "Skylinerw生成器、资源列表",
+            "tags": ["英语", "其他生成器/资源", "即将过时", "自定义生成器", "特技"],
+            "category": "生成器/资源",
+            "version-min": 9,
+            "version-max": 12,
+            "recommended": 1
+        },
+        "http://minecraft.tools/en/": {
+            "title": "网上自定义命令生成器合集",
+            "tags": ["英语", "其他生成器/资源", "即将过时", "自定义生成器", "特技"],
+            "category": "生成器/资源",
+            "version-min": 9,
+            "version-max": 12,
+            "recommended": 1
+        },
+        "http://www.mcbbs.net/thread-306895-1-1.html": {
+            "title": "NBTExplorer——NBT文件编辑器",
+            "tags": ["英语", "其他生成器/资源", "即将过时", "NBT"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2018-01-22",
+            "recommended": 2
+        },
+        "http://blockbench.net/": {
+            "title": "BlockBench——方块模型编辑器",
+            "tags": ["英语", "其他生成器/资源", "特技"],
+            "category": "生成器/资源",
+            "version-min": 8,
+            "version-max": 13,
+            "recommended": 1
+        },
+        "https://minecraft-zh.gamepedia.com/%E5%91%BD%E4%BB%A4": {
+            "title": "Wiki——命令",
+            "tags": ["命令介绍"],
+            "category": "常用网站",
+            "version-min": null,
+            "version-max": null,
+            "last-update": null,
+            "recommended": 2
+        },
+        "https://minecraft-zh.gamepedia.com/%E8%AE%B0%E5%88%86%E6%9D%BF": {
+            "title": "Wiki——记分板",
+            "tags": ["命令介绍"],
+            "category": "常用网站",
+            "version-min": null,
+            "version-max": null,
+            "last-update": null,
+            "recommended": 0
+        },
+        "https://minecraft.gamepedia.com/Chunk_format": {
+            "title": "Wiki——区块格式（实体、方块实体NBT）",
+            "tags": ["NBT", "英语"],
+            "category": "常用网站",
+            "version-min": null,
+            "version-max": null,
+            "last-update": null,
+            "recommended": 0
+        },
+        "https://minecraft.gamepedia.com/Player.dat_format": {
+            "title": "Wiki——Player.dat格式（玩家、物品NBT）",
+            "tags": ["NBT", "英语"],
+            "category": "常用网站",
+            "version-min": null,
+            "version-max": null,
+            "last-update": null,
+            "recommended": 0
+        },
+        "https://minecraft.gamepedia.com/Sounds.json": {
+            "title": "Wiki——Sounds.json",
+            "tags": [],
+            "category": "常用网站",
+            "version-min": null,
+            "version-max": null,
+            "last-update": null,
+            "recommended": 0
+        },
+        "https://minecraft-zh.gamepedia.com/Java%E7%89%88%E6%95%B0%E6%8D%AE%E5%80%BC": {
+            "title": "Wiki——方块、物品数据值",
+            "tags": ["即将过时"],
+            "category": "常用网站",
+            "version-min": null,
+            "version-max": null,
+            "last-update": null,
+            "recommended": 0
+        },
+        "https://minecraft-zh.gamepedia.com/%E6%88%98%E5%88%A9%E5%93%81%E8%A1%A8": {
+            "title": "Wiki——Loot table 战利品表",
+            "tags": ["格式介绍"],
+            "category": "常用网站",
+            "version-min": null,
+            "version-max": null,
+            "last-update": null,
+            "recommended": 0
+        },
+        "https://minecraft-zh.gamepedia.com/%E8%BF%9B%E5%BA%A6": {
+            "title": "Wiki——Advancement 进度",
+            "tags": ["格式介绍"],
+            "category": "常用网站",
+            "version-min": null,
+            "version-max": null,
+            "last-update": null,
+            "recommended": 0
+        },
+        "https://minecraft-zh.gamepedia.com/%E9%85%8D%E6%96%B9": {
+            "title": "Wiki——Recipe 配方",
+            "tags": ["格式介绍"],
+            "category": "常用网站",
+            "version-min": null,
+            "version-max": null,
+            "last-update": null,
+            "recommended": 0
+        },
+        "https://www.reddit.com/r/MinecraftCommands/": {
+            "title": "Reddit命令版",
+            "tags": ["英语"],
+            "category": "常用网站",
+            "version-min": null,
+            "version-max": null,
+            "last-update": null,
+            "recommended": 0
+        }
     }
 }
