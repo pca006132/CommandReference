@@ -36,11 +36,11 @@ export default {
             if (tag === '即将过时') {
                 return 'warning';
             }
+            if (tag === '部分过时') {
+                return 'danger';
+            }
             if (tag === '预览版') {
                 return 'success';
-            }
-            if (tag === '英语') {
-                return 'warning';
             }
             return 'secondary';
         },
@@ -51,6 +51,9 @@ export default {
             if (tag === '即将过时') {
                 return '在最新预览版失效';
             }
+            if (tag === '部分过时') {
+                return '帖子部分内容已经过时';
+            }
             if (tag === '预览版') {
                 return '仅在预览版有效';
             }
@@ -59,12 +62,12 @@ export default {
     },
     computed: {
         version: function () {
-            if (!this.$props.properties["version-min"]) {
+            if (!this.properties["version-min"]) {
                 return "-";
             }
-            return "1." + this.$props.properties["version-min"].toString() +
-                (this.$props.properties["version-min"] === this.$props.properties["version-max"] ?
-                "" : ("-1." + this.$props.properties["version-max"].toString()));
+            return "1." + this.properties["version-min"].toString() +
+                (this.properties["version-min"] === this.properties["version-max"] ?
+                "" : ("-1." + this.properties["version-max"].toString()));
         }
     }
 }

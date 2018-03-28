@@ -24,7 +24,7 @@
                 <b-col class="col-12 col-md-9 bd-content" id="content">
                     <intro></intro>
                     <adv :pics="pics"></adv>
-                    <manager :threads="threads" :title="title" :tags="filter_tags" :version="version" v-on:update="update_categories"></manager>
+                    <manager :threads="threads" :title="title" :tags="filter_tags" :exclusion="exclude_tags" :version="version" v-on:update="update_categories"></manager>
                     <hr />
                     <offset name="words" />
                     <h3>常用字词表</h3>
@@ -35,7 +35,7 @@
                     <hr class="d-md-none" />
                     <offset name="searchbar" />
                     <search v-on:update="update_title"></search>
-                    <tags title="筛选 Tag" :tags="tags" v-on:update="update_tags"></tags>
+                    <tags :exclude="true" title="筛选 Tag" :tags="tags" v-on:update="update_tags"></tags>
                     <version :min="version_min" :max="version_max" v-on:update="update_version"></version>
                 </b-col>
             </b-row>
@@ -75,22 +75,24 @@
             return {
                 categories: [],
                 filter_tags: [],
+                exclude_tags: [],
                 title: '',
                 version: '任意版本'
             }
         },
         methods: {
             update_categories(content) {
-                this.$data.categories = content;
+                this.categories = content;
             },
-            update_tags(content) {
-                this.$data.filter_tags = content;
+            update_tags(content, excludes) {
+                this.filter_tags = content;
+                this.exclude_tags = excludes;
             },
             update_title(content) {
-                this.$data.title = content;
+                this.title = content;
             },
             update_version(content) {
-                this.$data.version = content;
+                this.version = content;
             }
         }
     }

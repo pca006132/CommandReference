@@ -13,7 +13,7 @@ export default {
     },
     methods: {
         update: function() {
-            this.$emit('update', this.$data.version_selected);
+            this.$emit('update', this.version_selected);
         }
     },
     data() {
@@ -25,7 +25,7 @@ export default {
         options: function () {
             let opts = [];
             opts.push('任意版本');
-            for (let i = this.$props.max; i >= this.$props.min; i--) {
+            for (let i = this.max; i >= this.min; i--) {
                 opts.push('1.' + i.toString());
             }
             return opts;

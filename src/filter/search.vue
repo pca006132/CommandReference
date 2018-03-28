@@ -18,7 +18,7 @@ export default {
                 clearTimeout(timer);
             }
             timer = setTimeout(()=>{
-                this.$emit('update', this.$data.value);
+                this.$emit('update', this.value);
                 timer = null;
             }, 1000);
         }

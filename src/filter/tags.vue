@@ -1,6 +1,8 @@
 <template>
    <b-card :title="title" >
         <b-badge class="noselect" v-on:click="toggle" variant="light" v-for="tag in tags" :key="tag">{{tag}}</b-badge>
+        <hr v-if="exclude" />
+        <b-form-checkbox v-if="exclude" v-model="exclude_mode">排除模式</b-form-checkbox>
    </b-card>
 </template>
 
@@ -10,32 +12,49 @@ export default {
     props: {
         tags: Array,
         maximum: Number,
-        title: String
+        title: String,
+        exclude: Boolean
     },
     methods: {
         toggle: function(event) {
             if ($(event.target).hasClass('badge-light')) {
-                if (this.maximum && this.$data.filter.length === this.maximum) {
+                if (this.maximum && this.filter.length === this.maximum) {
                     return;
                 }
 
                 $(event.target).removeClass('badge-light');
-                $(event.target).addClass('badge-secondary');
-                this.$data.filter.push($(event.target).text());
+
+                if (this.exclude_mode) {
+                    $(event.target).addClass('badge-danger');
+                    this.$data.excludes.push($(event.target).text());
+                } else {
+                    $(event.target).addClass('badge-success');
+                    this.$data.filter.push($(event.target).text());
+                }
+
             } else {
-                $(event.target).removeClass('badge-secondary');
+                $(event.target).removeClass('badge-danger');
+                $(event.target).removeClass('badge-success');
+
                 $(event.target).addClass('badge-light');
-                let index = this.$data.filter.indexOf($(event.target).text());
+                let index = this.filter.indexOf($(event.target).text());
                 if (index > -1) {
-                    this.$data.filter.splice(index, 1);
+                    this.filter.splice(index, 1);
+                }
+
+                index = this.excludes.indexOf($(event.target).text());
+                if (index > -1) {
+                    this.excludes.splice(index, 1);
                 }
             }
-            this.$emit('update', this.$data.filter);
+            this.$emit('update', this.filter, this.excludes);
         }
     },
     data () {
         return {
-            filter: []
+            filter: [],
+            excludes: [],
+            exclude_mode: false
         }
     }
 }

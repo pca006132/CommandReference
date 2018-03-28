@@ -81,7 +81,7 @@ function categorize(sorted_urls, threads) {
     return [sorted_categories, categories];
 }
 
-function thread_match(version, tags, title) {
+function thread_match(version, tags, exclusion, title) {
     let version_match = ((version) => {
         if (version === "任意版本") {
             return thread=>true;
@@ -91,9 +91,11 @@ function thread_match(version, tags, title) {
             return !thread["version-min"] || (thread["version-min"] <= num && num <= thread["version-max"]);
         }
     })(version);
-    function tags_match(thread, tags) {
-        if (tags.length === 0) {
-            return true;
+    function tags_match(thread) {
+        for (let tag of exclusion) {
+            if (thread.tags.indexOf(tag) !== -1) {
+                return false;
+            }
         }
         for (let tag of tags) {
             if (thread.tags.indexOf(tag) === -1) {
@@ -109,7 +111,7 @@ function thread_match(version, tags, title) {
         title = title.toLowerCase();
         return thread=>thread.title.toLowerCase().indexOf(title) !== -1;
     })(title)
-    return (thread)=>version_match(thread) && tags_match(thread, tags) && title_match(thread);
+    return (thread)=>version_match(thread) && tags_match(thread) && title_match(thread);
 }
 
 function filter(sorted_categories, categories, threads, predicate) {
@@ -137,6 +139,7 @@ export default {
     props: {
         threads: Array,
         tags: Array,
+        exclusion: Array,
         version: String,
         title: String
     },
@@ -146,7 +149,7 @@ export default {
         },
         categories: function() {
             let result = filter(this.raw[0], this.raw[1], this.threads,
-                thread_match(this.version, this.tags, this.title));
+                thread_match(this.version, this.tags, this.exclusion, this.title));
             this.$emit("update", result[0]);
 
             return result;
