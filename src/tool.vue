@@ -88,9 +88,6 @@ export default {
             if (this.url === '') {
                 return '错误: 帖子应该有 URL 。';
             }
-            if (this.tag_list.length === 0) {
-                return '错误: 最起码应该有一个 tag。';
-            }
             if (this.cat === '') {
                 return '错误: 帖子应该有类型。';
             }

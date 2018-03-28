@@ -34,10 +34,10 @@ function sort_threads(threads) {
                 return 1;
             }
         }
-        if (threads[a]["last-update"] > threads[b]["last-update"]) {
+        if ((threads[a]["last-update"] || '') > (threads[b]["last-update"] || '')) {
             return -1;
         }
-        if (threads[a]["last-update"] < threads[b]["last-update"]) {
+        if ((threads[a]["last-update"] || '') < (threads[b]["last-update"] || '')) {
             return 1;
         }
         return 0;
@@ -60,10 +60,10 @@ function categorize(sorted_urls, threads) {
 
     categories["命令快讯"] = slice2(slice2(sorted_urls, i=>threads[sorted_urls[i]].recommended < 1)
         .sort((a, b)=> {
-            if (threads[a]["last-update"] > threads[b]["last-update"]) {
+            if ((threads[a]["last-update"] || '') > (threads[b]["last-update"] || '')) {
                 return -1;
             }
-            if (threads[a]["last-update"] < threads[b]["last-update"]) {
+            if ((threads[a]["last-update"] || '') < (threads[b]["last-update"] || '')) {
                 return 1;
             }
             return 0;
@@ -88,7 +88,7 @@ function thread_match(version, tags, title) {
         }
         let num = parseInt(version.substring(2));
         return thread=> {
-            return thread["version-min"] <= num && num <= thread["version-max"];
+            return !thread["version-min"] || (thread["version-min"] <= num && num <= thread["version-max"]);
         }
     })(version);
     function tags_match(thread, tags) {

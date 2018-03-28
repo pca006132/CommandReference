@@ -15,7 +15,7 @@
         </b-col>
         <b-col class="col-12 col-md-2">
             <div class="box">
-                <span class="align-middle">{{properties["last-update"]}}</span>
+                <span class="align-middle">{{properties["last-update"] || '未知/不适用'}}</span>
             </div>
         </b-col>
     </b-row>
@@ -59,6 +59,9 @@ export default {
     },
     computed: {
         version: function () {
+            if (!this.$props.properties["version-min"]) {
+                return "-";
+            }
             return "1." + this.$props.properties["version-min"].toString() +
                 (this.$props.properties["version-min"] === this.$props.properties["version-max"] ?
                 "" : ("-1." + this.$props.properties["version-max"].toString()));

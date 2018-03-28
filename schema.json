@@ -78,7 +78,6 @@
                                     "英语"
                                 ]
                             },
-                            "minItems": 1,
                             "maxItems": 8
                         },
                         "category": {
@@ -114,7 +113,7 @@
                         }
                     },
                     "required": [
-                        "title", "last-update", "tags", "category", "version-min", "version-max", "recommended"
+                        "title", "tags", "category", "recommended"
                     ]
                 }
             }
