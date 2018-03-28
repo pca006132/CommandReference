@@ -41,6 +41,11 @@
         </b-row>
         <hr />
         <b-row>
+            <b-col sm="3"><label for="authors">作者（以半角逗号分隔不同作者名称）</label></b-col>
+            <b-col sm="9"><b-form-input type="text" max="2" min="0" id="authors" v-model="authors"></b-form-input></b-col>
+        </b-row>
+        <hr />
+        <b-row>
             <b-col sm="3"><label for="recommended">推荐程度（0为一般，1为推荐阅读，2为推荐新人阅读）</label></b-col>
             <b-col sm="9"><b-form-input type="number" max="2" min="0" id="recommended" v-model="recommended"></b-form-input></b-col>
         </b-row>
@@ -79,7 +84,8 @@ export default {
             ver_min: '',
             ver_min: '',
             last_update: '',
-            no_update: false
+            no_update: false,
+            authors: ''
         }
     },
     computed: {
@@ -107,7 +113,8 @@ export default {
                 'version-min': (this.version_min === '不适用' || this.version_max === '不适用')? undefined : parseInt(this.ver_min.substring(2)),
                 'version-max': (this.version_min === '不适用' || this.version_max === '不适用')? undefined :parseInt(this.ver_max.substring(2)),
                 'last-update': this.no_update? undefined : this.last_update,
-                recommended: parseInt(this.recommended)
+                recommended: parseInt(this.recommended),
+                authors: (this.authors !== '')? this.authors.split(',') : undefined
             })
         },
         versions() {

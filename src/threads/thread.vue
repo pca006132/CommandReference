@@ -1,6 +1,6 @@
 <template>
     <b-row class="thread">
-        <b-col class="col-12 col-md-6">
+        <b-col class="col-12 col-md-4">
             <div class="box text-left">
                 <a class="title" v-bind:href="url" target="_blank">{{properties.title}}</a>
             </div>
@@ -13,10 +13,23 @@
                 :key="tag" :variant="variant(tag)" v-b-tooltip.hover="get_tips(tag)">{{tag}}</b-badge>
             </div>
         </b-col>
-        <b-col class="col-12 col-md-2">
-            <div class="box">
-                <span class="align-middle">{{properties["last-update"] || '未知/不适用'}}</span>
-            </div>
+        <b-col class="col-12 col-md-4">
+            <b-row>
+                <b-col v-if="properties['authors'] && properties['authors'].length > 0">
+                    {{properties['authors'][0]}}
+                    <div class="d-inline" v-if="properties['authors'].length > 1">
+                        <b-button variant="link" size="sm" class="hint">
+                            <span class="authors">{{properties['authors'].slice(1).map(a=>', ' + a).join("")}}</span>
+                        </b-button>
+                    </div>
+                </b-col>
+                <b-col>
+                    <div class="box">
+                        <span class="align-middle">{{properties["last-update"] || '未知/不适用'}}</span>
+                    </div>
+                </b-col>
+            </b-row>
+
         </b-col>
     </b-row>
 </template>
@@ -74,6 +87,35 @@ export default {
 </script>
 
 <style>
+.hint {
+    padding: 0;
+    text-decoration: none;
+    display: inline;
+}
+
+.hint::after {
+    content: "...";
+}
+
+.hint:focus {
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    display: inline;
+}
+
+.hint:focus::after {
+    content: "";
+}
+
+.authors {
+    display: none;
+}
+
+.hint:focus .authors {
+    display: inline;
+}
+
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Safari */

@@ -7,6 +7,18 @@ Vue.use(bootstrapVue)
 
 $.get("https://raw.githubusercontent.com/pca006132/CommandReference/master/data.json", (result)=> {
     let data = JSON.parse(result);
+    data.threads["example.com"] = {
+        "title": "例子",
+        "last-update": "2018-03-23",
+        "tags": ["基础", "其他生成器/资源"],
+        "category": "其他",
+        "version-min": 8,
+        "version-max": 13,
+        "recommended": 2,
+        "authors": [
+            "test", "pca"
+        ]
+    }
     new Vue({
         el: '#app',
         render: h => h(App, {
