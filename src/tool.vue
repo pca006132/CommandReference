@@ -104,9 +104,9 @@ export default {
                 title: this.title,
                 tags: this.tag_list,
                 category: this.cat,
-                'version-min': (this.version_min === '不适用' || this.version_max === '不适用')? null : parseInt(this.ver_min.substring(2)),
-                'version-max': (this.version_min === '不适用' || this.version_max === '不适用')? null :parseInt(this.ver_max.substring(2)),
-                'last-update': this.no_update? null : this.last_update,
+                'version-min': (this.version_min === '不适用' || this.version_max === '不适用')? undefined : parseInt(this.ver_min.substring(2)),
+                'version-max': (this.version_min === '不适用' || this.version_max === '不适用')? undefined :parseInt(this.ver_max.substring(2)),
+                'last-update': this.no_update? undefined : this.last_update,
                 recommended: parseInt(this.recommended)
             })
         },
