@@ -62,10 +62,10 @@ module.exports = {
     contentBase: './dist',
     noInfo: true
   },
+  devtool: 'source-map',
   performance: {
     hints: false
-  },
-  devtool: '#eval-source-map'
+  }
 }
 
 if (process.env.NODE_ENV === 'production') {
