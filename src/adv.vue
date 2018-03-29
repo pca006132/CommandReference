@@ -26,12 +26,4 @@ export default {
         margin-top: 1em;
         margin-bottom: 1em;
     }
-
-    @media only screen and (min-width: 768px) {
-        .wrapper {
-            margin-left: 2em;
-            margin-right: 2em;
-        }
-    }
-
 </style>

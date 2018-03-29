@@ -1,18 +1,21 @@
 <template>
-    <div class="card category">
-        <header class="card-header category-header" v-b-toggle="collapse_name">
-            <div class="header-content">
-                {{header}}<span class="when-opened">▲</span><span class="when-closed">▼</span>
-            </div>
-        </header>
-        <b-collapse :visible="shown" :id="collapse_name">
-            <div class="card-body">
-                <b-container>
-                    <thread v-for="url in sorted"
-                        :key="url" :properties="threads[url]" :url="url"></thread>
-                </b-container>
-            </div>
-        </b-collapse>
+    <div>
+        <div class="card category">
+            <header class="card-header category-header text-left" v-b-toggle="collapse_name">
+                <div class="header-content">
+                    <span class="when-opened">▲</span><span class="when-closed">▼</span>{{header}}
+                </div>
+            </header>
+            <b-collapse :visible="shown" :id="collapse_name">
+                <div class="card-body">
+                    <b-container fluid="true">
+                        <thread v-for="url in sorted"
+                            :key="url" :properties="threads[url]" :url="url"></thread>
+                    </b-container>
+                </div>
+            </b-collapse>
+        </div>
+        <hr />
     </div>
 </template>
 
@@ -43,7 +46,7 @@ export default {
 </script>
 
 <style>
-.card-header {
+.category-header {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Safari */
      -khtml-user-select: none;   /* Konqueror HTML */
@@ -51,6 +54,7 @@ export default {
         -ms-user-select: none;   /* Internet Explorer/Edge */
             user-select: none;   /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
+
 }
 
 .category-header.collapsed {

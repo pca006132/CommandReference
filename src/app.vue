@@ -21,22 +21,24 @@
         </b-navbar>
         <b-container fluid="true" id="container">
             <b-row fluid="true">
-                <b-col class="col-12 col-md-9 bd-content" id="content">
-                    <intro></intro>
-                    <adv :pics="pics"></adv>
+                <main class="col-12 col-md-10 bd-content" id="content">
+                    <intro :pics="pics"></intro>
                     <manager :threads="threads" :title="title" :tags="filter_tags" :exclusion="exclude_tags" :version="version" v-on:update="update_categories"></manager>
-                    <hr />
                     <offset name="words" />
-                    <h3>常用字词表</h3>
+                    <h3 class="text-left">常用字词表</h3>
                     <b-table class="text-left" striped hover :items="words"></b-table>
-                </b-col>
+                </main>
 
-                <b-col class="col-12 col-md-3 order-md-first" id="sidebar">
+                <b-col class="col-12 col-md-2 order-md-first" id="sidebar">
                     <hr class="d-md-none" />
+                    <b-form-group>
                     <offset name="searchbar" />
                     <search v-on:update="update_title"></search>
+                    <hr />
                     <tags :exclude="true" title="筛选 Tag" :tags="tags" v-on:update="update_tags"></tags>
+                    <hr />
                     <version :min="version_min" :max="version_max" v-on:update="update_version"></version>
+                    </b-form-group>
                 </b-col>
             </b-row>
         </b-container>
@@ -49,7 +51,6 @@
     import version_selector from './filter/version.vue';
     import manager from './threads/manager.vue';
     import intro from './intro.vue';
-    import adv from './adv.vue';
     import offset from './util/offset.vue';
 
     export default {
@@ -60,7 +61,6 @@
             version: version_selector,
             manager: manager,
             intro: intro,
-            adv: adv,
             offset: offset
         },
         props: {
@@ -109,15 +109,34 @@
 
     #container {
         padding: 1.5em;
+        @media only screen and (min-width: 768px) {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    }
+
+    #content {
+        @media only screen and (min-width: 768px) {
+            padding-top: 1.5em;
+        }
     }
 
     #sidebar {
         @media only screen and (min-width: 768px) {
-            border-right: 1px solid gray;
-            height: 90vh;
+            padding-top: 1.5em;
+            border-right: 1px solid rgba(0,0,0,.1);
+            height: calc(100vh - 56px);
             overflow-y: auto;
             position: sticky;
-            top: 5em;
+            top: 56px;
+        }
+    }
+
+    .bg-dark {
+        z-index: 999;
+        max-height: 100vh;
+        @media only screen and (max-width: 768px) {
+            overflow-y: auto;
         }
     }
 
@@ -125,8 +144,8 @@
         min-width: 200px;
         padding: 5px 0;
         margin: 2px 0 0;
-        background-color: #343a40 !important;
-        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: #424242!important;
+
         -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
                 box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     }
@@ -141,13 +160,13 @@
     .bg-dark .dropdown-menu > a:hover,
     .bg-dark .dropdown-menu > a:focus {
         color: rgba(255,255,255,.75);
-        background-color: #343a40 !important;
+        background-color: #424242!important;
         text-decoration: none;
     }
     .bg-dark .dropdown-menu > a,
     .bg-dark .dropdown-menu > a:hover,
     .bs-dark .dropdown-menu > a:focus {
-        background-color: #343a40 !important;
+        background-color: #424242!important;
         text-decoration: none;
         outline: 0;
     }

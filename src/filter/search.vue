@@ -1,10 +1,6 @@
 <template>
-    <b-card title="标题搜索">
-            <b-form-group>
-               <b-form-input id="search" v-model="value" v-on:input="lazy_search" type="text">
-            </b-form-input>
-        </b-form-group>
-    </b-card>
+    <b-form-input id="search" v-model="value" placeholder="搜索标题..." v-on:input="lazy_search" type="text">
+    </b-form-input>
 </template>
 
 <script>

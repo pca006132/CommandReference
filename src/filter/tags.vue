@@ -1,9 +1,16 @@
 <template>
-   <b-card :title="title" >
-        <b-badge class="noselect" v-on:click="toggle" variant="light" v-for="tag in tags" :key="tag">{{tag}}</b-badge>
-        <hr v-if="exclude" />
-        <b-form-checkbox v-if="exclude" v-model="exclude_mode">排除模式</b-form-checkbox>
-   </b-card>
+    <div class="text-left">
+        <strong>{{title}}</strong><br/>
+        <div class="container">
+            <p><b-badge class="noselect" v-on:click="toggle" href="#" variant="light" v-for="tag in tags" :key="tag">{{tag}}</b-badge></p>
+            <div v-if="exclude" class="form-check">
+                <input v-model="exclude_mode" class="form-check-input" type="checkbox" id="exclude">
+                <label class="form-check-label" for="exclude">
+                    排除标签模式
+                </label>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -47,6 +54,7 @@ export default {
                     this.excludes.splice(index, 1);
                 }
             }
+            $(event.target).blur();
             this.$emit('update', this.filter, this.excludes);
         }
     },

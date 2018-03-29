@@ -1,12 +1,12 @@
 <template>
-    <b-row class="thread">
+    <b-row class="thread text-left">
         <b-col class="col-12 col-md-4">
-            <div class="box text-left">
+            <div class="box">
                 <a class="title" v-bind:href="url" target="_blank">{{properties.title}}</a>
             </div>
         </b-col>
         <b-col class="col-12 col-md-4">
-            <div class="box text-left">
+            <div class="box">
                 <b-badge class="noselect tag" v-if="properties['version-min']" variant="success">{{version}}</b-badge>
 
                 <b-badge class="noselect tag" v-for="tag in properties.tags"
