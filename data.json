@@ -604,6 +604,22 @@
                 "PotatoMaster101"
             ]
         },
+        "http://www.mcbbs.net/thread-237123-1-1.html": {
+            "title": "贰逼实例教程索引",
+            "tags": [
+                "命令机制",
+                "黑科技",
+                "地图作品",
+                "原版模组",
+                "即将过时",
+                "部分过时"],
+            "category": "教程索引",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2018-02-13",
+            "recommended": 2,
+            "authors": ["贰逼"]
+        },
         "http://www.mcbbs.net/thread-604209-1-1.html": {
             "title": "命令工具箱",
             "tags": [
