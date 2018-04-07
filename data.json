@@ -209,7 +209,7 @@
             ]
         },
         "http://www.ganxiaozhe.com/mc/entitytool.html": {
-            "title": "MINECRAFT ENTITY TOOL 实体，生物蛋，刷怪笼生成器",
+            "title": "MET 实体,生物蛋,刷怪笼生成器 [内置物品生成器]",
             "tags": [
                 "NBT",
                 "自定义生成器",
@@ -218,8 +218,8 @@
             ],
             "category": "生成器/资源",
             "version-min": 10,
-            "version-max": 12,
-            "last-update": "2018-03-24",
+            "version-max": 13,
+            "last-update": "2018-04-06",
             "recommended": 1,
             "authors": [
                 "甘小蔗"
@@ -609,16 +609,20 @@
             "tags": [
                 "命令机制",
                 "黑科技",
-                "地图作品",
                 "原版模组",
+                "地图作品",
+                "实例",
                 "即将过时",
-                "部分过时"],
+                "部分过时"
+            ],
             "category": "教程索引",
             "version-min": 8,
             "version-max": 12,
             "last-update": "2018-02-13",
             "recommended": 2,
-            "authors": ["贰逼"]
+            "authors": [
+                "贰逼"
+            ]
         },
         "http://www.mcbbs.net/thread-604209-1-1.html": {
             "title": "命令工具箱",
@@ -921,6 +925,22 @@
             ],
             "category": "常用网站",
             "recommended": 0
+        },
+        "http://www.mcbbs.net/thread-787937-1-1.html": {
+            "title": "检测视线范围",
+            "tags": [
+                "数学",
+                "算法",
+                "概念验证"
+            ],
+            "category": "算法逻辑",
+            "version-min": 13,
+            "version-max": 13,
+            "last-update": "2018-03-23",
+            "recommended": 1,
+            "authors": [
+                "⊙v⊙"
+            ]
         }
     }
 }
