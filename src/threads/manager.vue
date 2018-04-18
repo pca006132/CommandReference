@@ -3,7 +3,8 @@
         <hr />
         <div v-for="cat in categories[0]" :key="cat[1]">
             <offset :name="cat[1]"/>
-            <category :name="cat[1]" :shown="cat[0] === '命令快讯' || cat[0] === '编辑推荐'" :header="cat[0]" :sorted="categories[1][cat[0]]" :threads="threads" ></category>
+            <category :name="cat[1]" :shown="cat[0] === '命令快讯' || cat[0] === '编辑推荐'" :header="cat[0]"
+            :sorted="categories[1][cat[0]]" :threads="threads" :vmax="vmax" :vmin="vmin" :snapshot="snapshot"></category>
         </div>
     </div>
 </template>
@@ -141,7 +142,10 @@ export default {
         tags: Array,
         exclusion: Array,
         version: String,
-        title: String
+        title: String,
+        vmax: Number,
+        vmin: Number,
+        snapshot: Boolean
     },
     computed: {
         raw: function() {

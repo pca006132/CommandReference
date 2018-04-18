@@ -1,21 +1,24 @@
 <template>
-    <b-row class="thread text-left">
-        <b-col class="col-12 col-md-4">
+    <div class="row thread text-left">
+        <div class="col-12 col-md-4">
             <div class="box">
                 <a class="title" v-bind:href="url" target="_blank">{{properties.title}}</a>
             </div>
-        </b-col>
-        <b-col class="col-12 col-md-4">
+        </div>
+        <div class="col-12 col-md-4">
             <div class="box">
-                <b-badge class="noselect tag" v-if="properties['version-min']" variant="success">{{version}}</b-badge>
+                <span class="badge badge-success noselect tag" v-if="properties['version-min']">{{version}}</span>
 
-                <b-badge class="noselect tag" v-for="tag in properties.tags"
-                :key="tag" :variant="variant(tag)" v-b-tooltip.hover="get_tips(tag)">{{tag}}</b-badge>
+                <span v-for="tag in properties.tags"
+                :key="tag" :class="'badge noselect tag badge-' + variant(tag)" >{{tag}}</span>
+
+                <span v-for="tag in ['过时', '即将过时', '预览版']" :key="tag" :variant="variant(tag)"
+                v-if="match(tag)" :class="'badge noselect tag badge-' + variant(tag)" >{{tag}}</span>
             </div>
-        </b-col>
-        <b-col class="col-12 col-md-4">
-            <b-row>
-                <b-col v-if="properties['authors'] && properties['authors'].length > 0">
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="row">
+                <div class="col" v-if="properties['authors'] && properties['authors'].length > 0">
                     <div class="box">
                     <span class="align-middle">
                         {{properties['authors'][0]}}
@@ -26,16 +29,15 @@
                         </div>
                     </span>
                     </div>
-                </b-col>
-                <b-col>
+                </div>
+                <div class="col">
                     <div class="box">
                         <span class="align-middle">{{properties["last-update"] || '未知/不适用'}}</span>
                     </div>
-                </b-col>
-            </b-row>
-
-        </b-col>
-    </b-row>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -43,7 +45,10 @@ export default {
     name: 'thread',
     props: {
         properties: Object,
-        url: String
+        url: String,
+        vmax: Number,
+        vmin: Number,
+        snapshot: Boolean
     },
     methods: {
         variant: function(tag) {
@@ -61,20 +66,29 @@ export default {
             }
             return 'secondary';
         },
-        get_tips: function(tag) {
-            if (tag === '过时') {
-                return '在最新正式版失效';
+        match: function (tag) {
+            switch (tag) {
+                case '过时':
+                    let max = this.vmax;
+                    if (this.snapshot) {
+                        max--;
+                    }
+                    if (!this.properties["version-min"]) {
+                        return false;
+                    }
+                    return this.properties["version-max"] < max;
+                case '即将过时':
+                    if (!this.properties["version-min"]) {
+                        return false;
+                    }
+                    return this.snapshot && this.properties["version-max"] < this.vmax;
+                case '预览版':
+                    if (!this.properties["version-min"]) {
+                        return false;
+                    }
+                    return this.snapshot && this.properties["version-min"] === this.vmax;
             }
-            if (tag === '即将过时') {
-                return '在最新预览版失效';
-            }
-            if (tag === '部分过时') {
-                return '帖子部分内容已经过时';
-            }
-            if (tag === '预览版') {
-                return '仅在预览版有效';
-            }
-            return '';
+            return false;
         }
     },
     computed: {

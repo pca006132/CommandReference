@@ -2,7 +2,7 @@
     <div class="text-left">
         <strong>{{title}}</strong><br/>
         <div class="container">
-            <p><b-badge class="noselect" v-on:click="toggle" href="#" variant="light" v-for="tag in tags" :key="tag">{{tag}}</b-badge></p>
+            <p><a class="badge badge-light noselect" v-on:click="toggle" href="#" v-for="tag in tags" :key="tag">{{tag}}</a></p>
             <div v-if="exclude" class="form-check">
                 <input v-model="exclude_mode" class="form-check-input" type="checkbox" id="exclude">
                 <label class="form-check-label" for="exclude">

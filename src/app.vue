@@ -1,47 +1,90 @@
 <template>
     <div id="app">
-        <b-navbar variant="dark" type="dark" sticky="true" toggleable="md">
-            <b-navbar-brand href="#intro">
+        <div class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+            <a class="navbar-brand" href="#intro">
                 <img src="./assets/logo.png" style="width:1.5em;" class="d-inline-block align-top"> 命令资源大全
-            </b-navbar-brand>
-            <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-            <b-collapse is-nav="true" id="nav_collapse">
-                <b-navbar-nav>
-                    <b-nav-item to="#words">常用字词表</b-nav-item>
-                    <b-nav-item to="./tool.html">添加帖子工具</b-nav-item>
-                    <b-nav-item to="https://github.com/pca006132/CommandReference">GitHub</b-nav-item>
-                    <b-nav-item to="#searchbar" class="d-md-none">搜索</b-nav-item>
-                    <b-nav-item-dropdown variant="dark" type="dark" text="分类" right>
-                        <b-dropdown-item variant="dark" type="dark" v-for="category in categories" :href="'#' + category[1]" :key="category[1]">
-                            {{category[0]}}
-                        </b-dropdown-item>
-                    </b-nav-item-dropdown>
-                </b-navbar-nav>
-            </b-collapse>
-        </b-navbar>
-        <b-container fluid="true" id="container">
-            <b-row fluid="true">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+                aria-label="Toggle navigation" aria-controls="nav_collapse" data-target="#nav_collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav_collapse">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#words">
+                            常用字词表
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tool.html">
+                            添加帖子工具
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="text-transform: none;" href="https://github.com/pca006132/CommandReference">
+                            GitHub
+                        </a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="#searchbar">
+                            搜索
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            分类
+                        </a>
+                        <div aria-labelledby="dropdown-toggle" class="dropdown-menu dropdown-menu-right" id="cat-dropdown">
+                            <a class="dropdown-item" v-for="category in categories" :href="'#' + category[1]" :key="category[1]">
+                                {{category[0]}}
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid" fluid="true" id="container">
+            <div class="row row-fluid">
+                <offset name="intro" />
                 <main class="col-12 col-md-10 bd-content" id="content">
                     <intro :pics="pics"></intro>
-                    <manager :threads="threads" :title="title" :tags="filter_tags" :exclusion="exclude_tags" :version="version" v-on:update="update_categories"></manager>
+                    <manager :threads="threads" :title="title" :tags="filter_tags"
+                    :exclusion="exclude_tags" :version="version" v-on:update="update_categories"
+                    :vmax="version_max" :vmin="version_min" :snapshot="snapshot"></manager>
                     <offset name="words" />
                     <h3 class="text-left">常用字词表</h3>
-                    <b-table class="text-left" striped hover :items="words"></b-table>
+
+                    <table class="table text-left">
+                        <thead>
+                            <tr>
+                                <th scope="col">缩写</th>
+                                <th scope="col">描述</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="word in words" :key="word['描述']">
+                                <td>{{word['缩写']}}</td>
+                                <td>{{word['描述']}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </main>
 
-                <b-col class="col-12 col-md-2 order-md-first" id="sidebar">
+                <div class="col-12 col-md-2 order-md-first" id="sidebar">
                     <hr class="d-md-none" />
-                    <b-form-group>
-                    <offset name="searchbar" />
-                    <search v-on:update="update_title"></search>
-                    <hr />
-                    <tags :exclude="true" title="筛选 Tag" :tags="tags" v-on:update="update_tags"></tags>
-                    <hr />
-                    <version :min="version_min" :max="version_max" v-on:update="update_version"></version>
-                    </b-form-group>
-                </b-col>
-            </b-row>
-        </b-container>
+                    <form>
+                        <div class="form-group">
+                        <offset name="searchbar" />
+                        <search v-on:update="update_title"></search>
+                        <hr />
+                        <tags :exclude="true" title="筛选 Tag" :tags="tags" v-on:update="update_tags"></tags>
+                        <hr />
+                        <version :min="version_min" :max="version_max" v-on:update="update_version"></version>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -66,6 +109,7 @@
         props: {
             version_min: Number,
             version_max: Number,
+            snapshot: Boolean,
             tags: Array,
             threads: Array,
             words: Array,

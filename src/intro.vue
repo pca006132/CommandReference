@@ -6,13 +6,13 @@
             </div>
             <br class="d-md-none" />
             <div class="d-inline-block align-middle">
-                <h1 id="intro">命令资源大全</h1>
+                <h1>命令资源大全</h1>
                 <p>您的命令参考索引</p>
             </div>
         </div>
         <hr />
-        <b-row>
-            <b-col>
+        <div class="row">
+            <div class="col">
                 <div class="d-inline-block align-middle text-center">
                 <p class="text-left d-inline-block">
                     命令资源大全是一个命令相关资源的索引网站，各位可以：<br/>
@@ -27,13 +27,13 @@
                     <a href="https://github.com/pca006132/CommandReference">命令资源大全(GitHub)</a>。
                 </p>
                 </div>
-            </b-col>
-        </b-row>
-        <b-row>
-            <b-col class="col-12 offset-md-3 col-md-6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 offset-md-3 col-md-6">
                 <adv :pics="pics"></adv>
-            </b-col>
-        </b-row>
+            </div>
+        </div>
     </div>
 </template>
 <script>

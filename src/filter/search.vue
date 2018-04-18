@@ -1,6 +1,5 @@
 <template>
-    <b-form-input id="search" v-model="value" placeholder="搜索标题..." v-on:input="lazy_search" type="text">
-    </b-form-input>
+    <input type="text" class="form-control" id="search" aria-describedby="搜索标题..." placeholder="搜索标题..." v-model="value" v-on:input="lazy_search"/>
 </template>
 
 <script>

@@ -21,7 +21,6 @@
   "homepage": "https://github.com/pca006132/CommandReference#readme",
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "bootstrap-vue": "^2.0.0-rc.2",
     "jsonschema": "^1.2.2",
     "vue": "^2.5.16"
   },

@@ -1,19 +1,21 @@
 <template>
     <div>
         <div class="card category">
-            <header class="card-header category-header text-left" v-b-toggle="collapse_name">
+            <div class="card-header category-header text-left" :id="collapse_name + '_h'"  data-toggle="collapse"
+                :data-target="'#' + collapse_name" :aria-expanded="shown" :aria-controls="collapse_name">
                 <div class="header-content">
                     <span class="when-opened">▲</span><span class="when-closed">▼</span>{{header}}
                 </div>
-            </header>
-            <b-collapse :visible="shown" :id="collapse_name">
+            </div>
+
+            <div :id="collapse_name" v-bind:class="{show: shown}" class="collapse" :aria-labelledby="collapse_name + '_h'">
                 <div class="card-body">
-                    <b-container fluid="true">
-                        <thread v-for="url in sorted"
-                            :key="url" :properties="threads[url]" :url="url"></thread>
-                    </b-container>
+                    <div class="container-fluid">
+                        <thread v-for="url in sorted" :key="url"
+                        :properties="threads[url]" :url="url" :vmax="vmax" :vmin="vmin" :snapshot="snapshot"></thread>
+                    </div>
                 </div>
-            </b-collapse>
+            </div>
         </div>
         <hr />
     </div>
@@ -35,7 +37,10 @@ export default {
         shown: {
             default: true,
             type: Boolean
-        }
+        },
+        vmax: Number,
+        vmin: Number,
+        snapshot: Boolean
     },
     computed: {
         collapse_name() {

@@ -1,18 +1,17 @@
 import Vue from 'vue'
-import bootstrapVue from "bootstrap-vue"
 import App from './app.vue'
 import $ from 'jquery';
 
-Vue.use(bootstrapVue)
-
 $.get("https://raw.githubusercontent.com/pca006132/CommandReference/master/data.json", (result)=> {
     let data = JSON.parse(result);
+    data.tags.push("即将过时", "过时", "预览版");
     new Vue({
         el: '#app',
         render: h => h(App, {
             props: {
                 version_min: data.version.min,
                 version_max: data.version.max,
+                snapshot: data.version.snapshot,
                 tags: data.tags,
                 threads: data.threads,
                 words: data["common-words"],

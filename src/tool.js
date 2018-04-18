@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import bootstrapVue from "bootstrap-vue"
 import tool from './tool.vue';
 
 Vue.use(tool);
