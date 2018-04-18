@@ -11,9 +11,6 @@
 
                 <span v-for="tag in properties.tags"
                 :key="tag" :class="'badge noselect tag badge-' + variant(tag)" >{{tag}}</span>
-
-                <span v-for="tag in ['过时', '即将过时', '预览版']" :key="tag" :variant="variant(tag)"
-                v-if="match(tag)" :class="'badge noselect tag badge-' + variant(tag)" >{{tag}}</span>
             </div>
         </div>
         <div class="col-12 col-md-4">
@@ -45,10 +42,7 @@ export default {
     name: 'thread',
     props: {
         properties: Object,
-        url: String,
-        vmax: Number,
-        vmin: Number,
-        snapshot: Boolean
+        url: String
     },
     methods: {
         variant: function(tag) {

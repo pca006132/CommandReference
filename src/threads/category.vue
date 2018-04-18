@@ -2,7 +2,8 @@
     <div>
         <div class="card category">
             <div class="card-header category-header text-left" :id="collapse_name + '_h'"  data-toggle="collapse"
-                :data-target="'#' + collapse_name" :aria-expanded="shown" :aria-controls="collapse_name">
+                :data-target="'#' + collapse_name" :aria-expanded="shown" :aria-controls="collapse_name"
+                v-bind:class="{collapsed: !shown}">
                 <div class="header-content">
                     <span class="when-opened">▲</span><span class="when-closed">▼</span>{{header}}
                 </div>
@@ -12,7 +13,7 @@
                 <div class="card-body">
                     <div class="container-fluid">
                         <thread v-for="url in sorted" :key="url"
-                        :properties="threads[url]" :url="url" :vmax="vmax" :vmin="vmin" :snapshot="snapshot"></thread>
+                        :properties="threads[url]" :url="url"></thread>
                     </div>
                 </div>
             </div>
@@ -37,10 +38,7 @@ export default {
         shown: {
             default: true,
             type: Boolean
-        },
-        vmax: Number,
-        vmin: Number,
-        snapshot: Boolean
+        }
     },
     computed: {
         collapse_name() {

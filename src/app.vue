@@ -49,8 +49,7 @@
                 <main class="col-12 col-md-10 bd-content" id="content">
                     <intro :pics="pics"></intro>
                     <manager :threads="threads" :title="title" :tags="filter_tags"
-                    :exclusion="exclude_tags" :version="version" v-on:update="update_categories"
-                    :vmax="version_max" :vmin="version_min" :snapshot="snapshot"></manager>
+                    :exclusion="exclude_tags" :version="version" v-on:update="update_categories"></manager>
                     <offset name="words" />
                     <h3 class="text-left">常用字词表</h3>
 
@@ -116,6 +115,14 @@
             pics: Object
         },
         data() {
+            for (let t of Object.keys(this.threads)) {
+                for (let tag of ["即将过时", "过时", "预览版"]) {
+                    if (match(this.threads[t], tag, this.version_max, this.version_min, this.snapshot)) {
+                        this.threads[t].tags.push(tag);
+                    }
+                }
+            }
+
             return {
                 categories: [],
                 filter_tags: [],
@@ -139,6 +146,25 @@
                 this.version = content;
             }
         }
+    }
+
+    function match (thread, tag, vmax, vmin, snapshot) {
+        if (!thread["version-min"]) {
+            return false;
+        }
+        switch (tag) {
+            case '过时':
+                let max = vmax;
+                if (snapshot) {
+                    max--;
+                }
+                return thread["version-max"] < max;
+            case '即将过时':
+                return snapshot && thread["version-max"] < vmax && thread["version-max"] === vmax - 1;
+            case '预览版':
+                return snapshot && thread["version-min"] === vmax;
+        }
+        return false;
     }
 </script>
 
