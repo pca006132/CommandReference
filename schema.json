@@ -5,21 +5,6 @@
     "title": "Root tag",
     "additionalProperties": false,
     "properties": {
-        "common-words": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                    "缩写": {
-                        "type": "string"
-                    },
-                    "描述": {
-                        "type": "string"
-                    }
-                }
-            }
-        },
         "adv": {
             "type": "object",
             "additionalProperties": false,
@@ -106,7 +91,7 @@
                         "recommended": {
                             "type": "integer",
                             "minimum": 0,
-                            "maximum": 2
+                            "maximum": 3
                         },
                         "authors": {
                             "type": "array",

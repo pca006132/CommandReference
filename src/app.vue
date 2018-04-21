@@ -11,11 +11,6 @@
             <div class="collapse navbar-collapse" id="nav_collapse">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#words">
-                            常用字词表
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="./tool.html">
                             添加帖子工具
                         </a>
@@ -50,23 +45,6 @@
                     <intro :pics="pics"></intro>
                     <manager :threads="threads" :title="title" :tags="filter_tags"
                     :exclusion="exclude_tags" :version="version" v-on:update="update_categories"></manager>
-                    <offset name="words" />
-                    <h3 class="text-left">常用字词表</h3>
-
-                    <table class="table text-left">
-                        <thead>
-                            <tr>
-                                <th scope="col">缩写</th>
-                                <th scope="col">描述</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr v-for="word in words" :key="word['描述']">
-                                <td>{{word['缩写']}}</td>
-                                <td>{{word['描述']}}</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </main>
 
                 <div class="col-12 col-md-2 order-md-first" id="sidebar">
@@ -111,7 +89,6 @@
             snapshot: Boolean,
             tags: Array,
             threads: Array,
-            words: Array,
             pics: Object
         },
         data() {

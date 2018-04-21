@@ -1,98 +1,4 @@
 {
-    "common-words": [
-        {
-            "缩写": "AEC",
-            "描述": "AreaEffectCloud, 药水云"
-        },
-        {
-            "缩写": "AS, 盔甲架, 装备架",
-            "描述": "ArmorStand"
-        },
-        {
-            "缩写": "OOC",
-            "描述": "\"一条\"命令(Only One Command)。即把多条命令压缩为一条summon命令, 或以一条summon命令生成多个命令方块"
-        },
-        {
-            "缩写": "cb、命令方块、指令方块",
-            "描述": "command block"
-        },
-        {
-            "缩写": "ccb",
-            "描述": "chain command block, 链锁命令方块"
-        },
-        {
-            "缩写": "exe",
-            "描述": "execute"
-        },
-        {
-            "缩写": "gm",
-            "描述": "gamemode"
-        },
-        {
-            "缩写": "icb",
-            "描述": "impulse command block, 就是普通的命令方块(脉冲命令方块)"
-        },
-        {
-            "缩写": "lt",
-            "描述": "loot table, 可掠夺物品表(用以修改生物掉落)"
-        },
-        {
-            "缩写": "rcb",
-            "描述": "repeating command block, 循环命令方块"
-        },
-        {
-            "缩写": "spcl",
-            "描述": "spreadplayers指令做的chunk loader(区块加载器)，注这简写极少用"
-        },
-        {
-            "缩写": "stat",
-            "描述": "玩家统计(记分板)"
-        },
-        {
-            "缩写": "stats",
-            "描述": "stats指令"
-        },
-        {
-            "缩写": "判据、准则",
-            "描述": "scoreboard的criteria(wiki官方译名:准则)"
-        },
-        {
-            "缩写": "命令、指令、\"代码\"",
-            "描述": "command"
-        },
-        {
-            "缩写": "数据值、伤害值",
-            "描述": "damage"
-        },
-        {
-            "缩写": "文本JSON",
-            "描述": "Raw JSON(/tellraw, /title等)"
-        },
-        {
-            "缩写": "显示区、显示位置",
-            "描述": "display slot(wiki官方译名:显示位置)"
-        },
-        {
-            "缩写": "目标、对象、变数",
-            "描述": "scoreboard的objective(wiki官方译名:目标)"
-        },
-        {
-            "缩写": "目标选择器、实体选择器",
-            "描述": "target selector"
-        },
-        {
-            "缩写": "碰撞箱",
-            "描述": "hitbox"
-        },
-        {
-            "缩写": "触发器",
-            "描述": "trigger"
-        },
-        {
-            "缩写": "计分板、记分板、scb",
-            "描述": "scoreboard(wiki官方译名:记分板)"
-        }
-    ],
     "tags": [
         "基础",
         "进阶",
@@ -814,7 +720,21 @@
                 "命令介绍"
             ],
             "category": "常用网站",
-            "recommended": 2
+            "recommended": 3
+        },
+        "https://minecraft-zh.gamepedia.com/%E5%91%BD%E4%BB%A4/%E6%9C%AF%E8%AF%AD%E5%88%97%E8%A1%A8": {
+            "title": "Wiki——命令术语、概念列表",
+            "tags": [],
+            "category": "常用网站",
+            "recommended": 3
+        },
+        "http://mc-command.oschina.io/command-tutorial/output/": {
+            "title": "命令进阶——系统化命令教程",
+            "tags": ["基础", "NBT", "命令机制", "实例", "游戏机制"],
+            "category": "教程索引",
+            "version-min": 12,
+            "version-max": 12,
+            "recommended": 3
         },
         "https://minecraft-zh.gamepedia.com/%E8%AE%B0%E5%88%86%E6%9D%BF": {
             "title": "Wiki——记分板",

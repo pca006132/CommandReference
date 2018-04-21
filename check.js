@@ -11,15 +11,6 @@ try {
     process.exit();
 }
 
-data["common-words"] = data["common-words"].sort((a, b) => {
-    if (a["缩写"] > b["缩写"])
-        return 1;
-    else if (a["缩写"] < b["缩写"])
-        return -1;
-    else
-        return 0;
-})
-
 for (let key of Object.keys(data.threads)) {
     let i = data.threads[key].tags.indexOf("预览版");
     if (i >= 0) {
