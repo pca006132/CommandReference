@@ -132,6 +132,6 @@
         }
     },
     "required": [
-        "common-words", "threads", "tags", "version", "adv"
+        "threads", "tags", "version", "adv"
     ]
 }

@@ -418,11 +418,9 @@
             ]
         },
         "https://commandtutorials.neocities.org/tutorials/logic/logical_operation.html": {
-            "title": "逻辑运算",
+            "title": "逻辑运算(and, or, not)",
             "tags": [
-                "基础",
-                "算法",
-                "命令机制"
+                "人生经验"
             ],
             "category": "算法逻辑",
             "version-min": 9,
@@ -433,16 +431,16 @@
             ]
         },
         "http://www.mcbbs.net/thread-433476-1-1.html": {
-            "title": "命令纠错FAQ",
+            "title": "命令常见问题",
             "tags": [
-                "基础",
-                "游戏机制",
-                "命令机制",
-                "人生经验"
+                "NBT",
+                "游戏系统",
+                "实例",
+                "部分过时"
             ],
-            "category": "游戏/命令机制",
+            "category": "有趣问答",
             "version-min": 8,
-            "version-max": 12,
+            "version-max": 13,
             "last-update": "2016-06-10",
             "recommended": 2,
             "authors": [
@@ -450,33 +448,31 @@
             ]
         },
         "http://www.mcbbs.net/thread-553550-1-1.html": {
-            "title": "命令逻辑FAQ",
+            "title": "逻辑/记分板FAQ",
             "tags": [
-                "进阶",
                 "游戏机制",
+                "命令机制",
                 "人生经验"
             ],
-            "category": "游戏/命令机制",
+            "category": "有趣问答",
             "version-min": 9,
             "version-max": 12,
-            "last-update": "2016-02-08",
+            "last-update": "2016-08-02",
             "recommended": 2,
             "authors": [
                 "pca006132"
             ]
         },
         "http://www.mcbbs.net/thread-210012-1-1.html": {
-            "title": "PotatoMaster101实例教程索引",
+            "title": "PM教程索引",
             "tags": [
-                "基础",
                 "NBT",
-                "游戏机制",
-                "实例",
-                "部分过时"
+                "格式介绍",
+                "实例"
             ],
             "category": "教程索引",
             "version-min": 8,
-            "version-max": 12,
+            "version-max": 13,
             "last-update": "2017-06-29",
             "recommended": 2,
             "authors": [
@@ -484,20 +480,21 @@
             ]
         },
         "http://www.mcbbs.net/thread-237123-1-1.html": {
-            "title": "贰逼实例教程索引",
+            "title": "2b教程索引",
             "tags": [
-                "命令机制",
+                "算法",
+                "特技",
+                "NBT",
                 "黑科技",
-                "原版模组",
-                "地图作品",
-                "实例",
-                "部分过时"
+                "格式介绍",
+                "其他生成器/资源",
+                "实例"
             ],
             "category": "教程索引",
             "version-min": 8,
-            "version-max": 12,
-            "last-update": "2018-02-13",
-            "recommended": 2,
+            "version-max": 13,
+            "last-update": "2017-10-02",
+            "recommended": 1,
             "authors": [
                 "贰逼"
             ]
@@ -730,7 +727,13 @@
         },
         "http://mc-command.oschina.io/command-tutorial/output/": {
             "title": "命令进阶——系统化命令教程",
-            "tags": ["基础", "NBT", "命令机制", "实例", "游戏机制"],
+            "tags": [
+                "基础",
+                "NBT",
+                "游戏机制",
+                "命令机制",
+                "实例"
+            ],
             "category": "教程索引",
             "version-min": 12,
             "version-max": 12,
@@ -822,39 +825,473 @@
                 "⊙v⊙"
             ]
         },
-        "http://www.mcbbs.net/thread-648470-1-1.html":{"title":"文本JSON Translate妙用","tags":["格式介绍","实例","基础"],"category":"命令/格式教程","last-update":"2016-11-14","recommended":0,"authors":["玄素"]},
-        "http://www.mcbbs.net/thread-336851-1-1.html":{"title":"spreadplayers命令","tags":["格式介绍","实例","基础"],"category":"命令/格式教程","last-update":"2014-09-08","recommended":0,"authors":["贰逼"]},
-        "http://www.mcbbs.net/thread-580049-1-1.html":{"title":"stopsound命令","tags":["格式介绍","实例","基础"],"category":"命令/格式教程","version-min":9,"version-max":13,"last-update":"2016-04-30","recommended":0,"authors":["MsYqgzt"]},
-        "http://www.mcbbs.net/thread-625963-1-1.html":{"title":"particle命令","tags":["格式介绍","实例","基础"],"category":"命令/格式教程","version-min":8,"version-max":13,"last-update":"2016-08-23","recommended":0,"authors":["FHC红石"]},
-        "http://www.mcbbs.net/thread-657520-1-1.html":{"title":"NBT格式问题","tags":["格式介绍","实例","基础","NBT"],"category":"有趣问答","version-min":8,"version-max":11,"last-update":"2016-12-28","recommended":0,"authors":["pca006132"]},
-        "http://www.mcbbs.net/thread-687807-1-1.html":{"title":"NBT格式","tags":["格式介绍","基础","NBT"],"category":"命令/格式教程","version-min":12,"version-max":13,"last-update":"2017-04-21","recommended":1,"authors":["pca006132"]},
-        "http://www.mcbbs.net/thread-619468-1-1.html":{"title":"2b Loot table教程索引","tags":["格式介绍","基础","实例"],"category":"教程索引","version-min":9,"version-max":12,"last-update":"2016-08-12","recommended":1,"authors":[" 贰逼"]},
-        "http://www.mcbbs.net/thread-467796-1-1.html":{"title":"FHC教程索引","tags":["实例","NBT","格式介绍","黑科技"],"category":"教程索引","version-min":8,"version-max":12,"last-update":"2017-06-02","recommended":0,"authors":["FHC红石"]},
-        "http://www.mcbbs.net/thread-237123-1-1.html":{"title":"2b教程索引","tags":["实例","NBT","格式介绍","黑科技","其他生成器/资源","算法","特技"],"category":"教程索引","version-min":8,"version-max":13,"last-update":"2017-10-02","recommended":1,"authors":["贰逼"]},
-        "http://www.mcbbs.net/thread-486184-1-1.html":{"title":"Ms教程索引","tags":["NBT","格式介绍","其他生成器/资源","实例"],"category":"教程索引","version-min":8,"version-max":10,"last-update":"2017-09-17","recommended":0,"authors":["MsYqgzt"]},
-        "http://www.mcbbs.net/thread-467345-1-1.html":{"title":"【顺手牵羊】小游戏运行原理","tags":["NBT","格式介绍","其他生成器/资源","实例"],"category":"作品例子","version-min":8,"version-max":8,"last-update":"2015-07-12","recommended":1,"authors":["MsYqgzt"]},
-        "http://www.mcbbs.net/thread-210012-1-1.html":{"title":"PM教程索引","tags":["NBT","格式介绍","实例"],"category":"教程索引","version-min":8,"version-max":13,"last-update":"2017-06-29","recommended":2,"authors":["PotatoMaster101"]},
-        "http://www.mcbbs.net/thread-212571-1-1.html":{"title":"Soft教程索引","tags":["实例","其他生成器/资源"],"category":"教程索引","version-min":8,"version-max":13,"last-update":"2014-03-02","recommended":0,"authors":["songfeitong"]},
-        "http://www.mcbbs.net/thread-223196-1-1.html":{"title":"Tyson教程索引","tags":["实例"],"category":"教程索引","version-min":8,"version-max":8,"last-update":"2014-08-26","recommended":0,"authors":["tyson"]},
-        "http://www.mcbbs.net/thread-536728-1-2.html":{"title":"乙烯教程索引","tags":["实例","算法","黑科技","数学"],"category":"教程索引","version-min":8,"version-max":12,"last-update":"2016-08-14","recommended":0,"authors":["乙烯_中国"]},
-        "http://www.mcbbs.net/thread-389220-1-1.html":{"title":"青皮教程索引","tags":["实例","黑科技"],"category":"教程索引","version-min":8,"version-max":8,"last-update":"2016-04-05","recommended":0,"authors":["C-青皮君"]},
-        "http://www.mcbbs.net/thread-618336-1-1.html":{"title":"冷却系统讲解","tags":["实例","NBT","游戏系统"],"category":"系统制作技巧","version-min":9,"version-max":12,"last-update":"2016-08-22","recommended":1,"authors":["acordome"]},
-        "http://www.mcbbs.net/thread-665934-1-1.html":{"title":"第三人称控制器","tags":["实例","命令机制","NBT","游戏系统","进阶"],"category":"系统制作技巧","version-min":9,"version-max":12,"last-update":"2017-01-22","recommended":0,"authors":["贰逼"]},
-        "http://www.mcbbs.net/thread-433476-1-1.html":{"title":"命令常见问题","tags":["实例","NBT","游戏系统","部分过时"],"category":"有趣问答","version-min":8,"version-max":13,"last-update":"2016-06-10","recommended":2,"authors":["PotatoMaster101"]},
-        "http://www.mcbbs.net/thread-562013-1-1.html":{"title":"平方取中法产生四位伪随机数","tags":["实例","数学","算法","概念验证"],"category":"算法逻辑","last-update":"2016-02-27","recommended":0,"authors":["贰逼"]},
-        "http://www.mcbbs.net/thread-521538-1-1.html":{"title":"二分法输出坐标到记分板","tags":["实例","数学","算法","概念验证"],"category":"算法逻辑","last-update":"2016-03-20","recommended":0,"authors":["乙烯_中国"]},
-        "http://www.mcbbs.net/thread-514093-1-1.html":{"title":"检测实体死前位置","tags":["实例","游戏机制","命令机制","概念验证"],"category":"算法逻辑","version-min":8,"version-max":12,"last-update":"2015-10-18","recommended":0,"authors":["pca006132"]},
-        "http://www.mcbbs.net/thread-532683-1-1.html":{"title":"3D迷宫生成","tags":["实例","概念验证","数学","算法","游戏系统"],"category":"算法逻辑","version-min":9,"version-max":12,"last-update":"2016-01-01","recommended":0,"authors":["林扬骐"]},
-        "http://www.mcbbs.net/thread-639929-1-1.html":{"title":"广度优先寻路算法","tags":["实例","概念验证","数学","算法"],"category":"算法逻辑","version-min":11,"version-max":12,"last-update":"2016-10-06","recommended":0,"authors":["Sunny_KyLe"]},
-        "http://www.mcbbs.net/thread-617894-1-1.html":{"title":"解数独","tags":["实例","概念验证","数学","算法"],"category":"算法逻辑","version-min":11,"version-max":12,"last-update":"2016-08-09","recommended":0,"authors":["MojeDes"]},
-        "http://www.mcbbs.net/thread-620979-1-1.html":{"title":"Bezier贝塞尔曲线生成","tags":["实例","概念验证","数学","算法"],"category":"算法逻辑","version-min":9,"version-max":10,"last-update":"2016-08-16","recommended":0,"authors":["ruhuasiyu"]},
-        "http://www.mcbbs.net/thread-553550-1-1.html":{"title":"逻辑/记分板FAQ","tags":["游戏机制","命令机制","人生经验"],"category":"有趣问答","version-min":9,"version-max":12,"last-update":"2016-08-02","recommended":2,"authors":["pca006132"]},
-        "https://commandtutorials.neocities.org/tutorials/logic/logical_operation.html":{"title":"逻辑运算(and, or, not)","tags":["人生经验"],"category":"算法逻辑","version-min":9,"version-max":12,"recommended":2,"authors":["pca006132"]},
-        "http://www.mcbbs.net/thread-654676-1-1.html":{"title":"方块结构旋转","tags":["实例","概念验证","数学","算法"],"category":"算法逻辑","version-min":9,"version-max":12,"recommended":0,"authors":["林扬骐"],"last-update": "2016-12-17"},
-        "http://www.mcbbs.net/thread-664232-1-1.html":{"title":"平面投影变换","tags":["实例","概念验证","数学","算法"],"category":"算法逻辑","version-min":9,"version-max":12,"recommended":0,"authors":["林扬骐"],"last-update": "2017-01-19"},
-        "http://www.mcbbs.net/thread-660559-1-1.html":{"title":"水平追踪导弹","tags":["实例","算法"],"category":"算法逻辑","version-min":9,"version-max":12,"last-update":"2017-01-13","recommended":0,"authors":["雷鸣·翾鹗"]},
-        "http://www.mcbbs.net/thread-669417-1-1.html":{"title":"水平追踪导弹·改","tags":["实例","算法"],"category":"算法逻辑","version-min":9,"version-max":12,"last-update":"2017-02-01","recommended":0,"authors":["skeleton小白"]},
-        "https://tieba.baidu.com/p/5038939384":{"title":"浅谈实体连线检测","tags":["实例","算法","概念验证"],"category":"算法逻辑","version-min":9,"version-max":12,"last-update":"2017-03-25","recommended":0,"authors":["TineBK"]},
-        "http://www.mcbbs.net/thread-684633-1-1.html":{"title":"数组二进制运算","tags":["实例","算法","概念验证","数学"],"category":"算法逻辑","version-min":9,"version-max":12,"last-update":"2017-04-04","recommended":0,"authors":["贰逼"]}
+        "http://www.mcbbs.net/thread-648470-1-1.html": {
+            "title": "文本JSON Translate妙用",
+            "tags": [
+                "基础",
+                "格式介绍",
+                "实例"
+            ],
+            "category": "命令/格式教程",
+            "last-update": "2016-11-14",
+            "recommended": 0,
+            "authors": [
+                "玄素"
+            ]
+        },
+        "http://www.mcbbs.net/thread-336851-1-1.html": {
+            "title": "spreadplayers命令",
+            "tags": [
+                "基础",
+                "格式介绍",
+                "实例"
+            ],
+            "category": "命令/格式教程",
+            "last-update": "2014-09-08",
+            "recommended": 0,
+            "authors": [
+                "贰逼"
+            ]
+        },
+        "http://www.mcbbs.net/thread-580049-1-1.html": {
+            "title": "stopsound命令",
+            "tags": [
+                "基础",
+                "格式介绍",
+                "实例"
+            ],
+            "category": "命令/格式教程",
+            "version-min": 9,
+            "version-max": 13,
+            "last-update": "2016-04-30",
+            "recommended": 0,
+            "authors": [
+                "MsYqgzt"
+            ]
+        },
+        "http://www.mcbbs.net/thread-625963-1-1.html": {
+            "title": "particle命令",
+            "tags": [
+                "基础",
+                "格式介绍",
+                "实例"
+            ],
+            "category": "命令/格式教程",
+            "version-min": 8,
+            "version-max": 13,
+            "last-update": "2016-08-23",
+            "recommended": 0,
+            "authors": [
+                "FHC红石"
+            ]
+        },
+        "http://www.mcbbs.net/thread-657520-1-1.html": {
+            "title": "NBT格式问题",
+            "tags": [
+                "基础",
+                "NBT",
+                "格式介绍",
+                "实例"
+            ],
+            "category": "有趣问答",
+            "version-min": 8,
+            "version-max": 11,
+            "last-update": "2016-12-28",
+            "recommended": 0,
+            "authors": [
+                "pca006132"
+            ]
+        },
+        "http://www.mcbbs.net/thread-687807-1-1.html": {
+            "title": "NBT格式",
+            "tags": [
+                "基础",
+                "NBT",
+                "格式介绍"
+            ],
+            "category": "命令/格式教程",
+            "version-min": 12,
+            "version-max": 13,
+            "last-update": "2017-04-21",
+            "recommended": 1,
+            "authors": [
+                "pca006132"
+            ]
+        },
+        "http://www.mcbbs.net/thread-619468-1-1.html": {
+            "title": "2b Loot table教程索引",
+            "tags": [
+                "基础",
+                "格式介绍",
+                "实例"
+            ],
+            "category": "教程索引",
+            "version-min": 9,
+            "version-max": 12,
+            "last-update": "2016-08-12",
+            "recommended": 1,
+            "authors": [
+                " 贰逼"
+            ]
+        },
+        "http://www.mcbbs.net/thread-467796-1-1.html": {
+            "title": "FHC教程索引",
+            "tags": [
+                "NBT",
+                "黑科技",
+                "格式介绍",
+                "实例"
+            ],
+            "category": "教程索引",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2017-06-02",
+            "recommended": 0,
+            "authors": [
+                "FHC红石"
+            ]
+        },
+        "http://www.mcbbs.net/thread-486184-1-1.html": {
+            "title": "Ms教程索引",
+            "tags": [
+                "NBT",
+                "格式介绍",
+                "其他生成器/资源",
+                "实例"
+            ],
+            "category": "教程索引",
+            "version-min": 8,
+            "version-max": 10,
+            "last-update": "2017-09-17",
+            "recommended": 0,
+            "authors": [
+                "MsYqgzt"
+            ]
+        },
+        "http://www.mcbbs.net/thread-467345-1-1.html": {
+            "title": "【顺手牵羊】小游戏运行原理",
+            "tags": [
+                "NBT",
+                "格式介绍",
+                "其他生成器/资源",
+                "实例"
+            ],
+            "category": "作品例子",
+            "version-min": 8,
+            "version-max": 8,
+            "last-update": "2015-07-12",
+            "recommended": 1,
+            "authors": [
+                "MsYqgzt"
+            ]
+        },
+        "http://www.mcbbs.net/thread-212571-1-1.html": {
+            "title": "Soft教程索引",
+            "tags": [
+                "其他生成器/资源",
+                "实例"
+            ],
+            "category": "教程索引",
+            "version-min": 8,
+            "version-max": 13,
+            "last-update": "2014-03-02",
+            "recommended": 0,
+            "authors": [
+                "songfeitong"
+            ]
+        },
+        "http://www.mcbbs.net/thread-223196-1-1.html": {
+            "title": "Tyson教程索引",
+            "tags": [
+                "实例"
+            ],
+            "category": "教程索引",
+            "version-min": 8,
+            "version-max": 8,
+            "last-update": "2014-08-26",
+            "recommended": 0,
+            "authors": [
+                "tyson"
+            ]
+        },
+        "http://www.mcbbs.net/thread-536728-1-2.html": {
+            "title": "乙烯教程索引",
+            "tags": [
+                "数学",
+                "算法",
+                "黑科技",
+                "实例"
+            ],
+            "category": "教程索引",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2016-08-14",
+            "recommended": 0,
+            "authors": [
+                "乙烯_中国"
+            ]
+        },
+        "http://www.mcbbs.net/thread-389220-1-1.html": {
+            "title": "青皮教程索引",
+            "tags": [
+                "黑科技",
+                "实例"
+            ],
+            "category": "教程索引",
+            "version-min": 8,
+            "version-max": 8,
+            "last-update": "2016-04-05",
+            "recommended": 0,
+            "authors": [
+                "C-青皮君"
+            ]
+        },
+        "http://www.mcbbs.net/thread-618336-1-1.html": {
+            "title": "冷却系统讲解",
+            "tags": [
+                "NBT",
+                "游戏系统",
+                "实例"
+            ],
+            "category": "系统制作技巧",
+            "version-min": 9,
+            "version-max": 12,
+            "last-update": "2016-08-22",
+            "recommended": 1,
+            "authors": [
+                "acordome"
+            ]
+        },
+        "http://www.mcbbs.net/thread-665934-1-1.html": {
+            "title": "第三人称控制器",
+            "tags": [
+                "进阶",
+                "NBT",
+                "命令机制",
+                "游戏系统",
+                "实例"
+            ],
+            "category": "系统制作技巧",
+            "version-min": 9,
+            "version-max": 12,
+            "last-update": "2017-01-22",
+            "recommended": 0,
+            "authors": [
+                "贰逼"
+            ]
+        },
+        "http://www.mcbbs.net/thread-562013-1-1.html": {
+            "title": "平方取中法产生四位伪随机数",
+            "tags": [
+                "数学",
+                "算法",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "last-update": "2016-02-27",
+            "recommended": 0,
+            "authors": [
+                "贰逼"
+            ]
+        },
+        "http://www.mcbbs.net/thread-521538-1-1.html": {
+            "title": "二分法输出坐标到记分板",
+            "tags": [
+                "数学",
+                "算法",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "last-update": "2016-03-20",
+            "recommended": 0,
+            "authors": [
+                "乙烯_中国"
+            ]
+        },
+        "http://www.mcbbs.net/thread-514093-1-1.html": {
+            "title": "检测实体死前位置",
+            "tags": [
+                "游戏机制",
+                "命令机制",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 8,
+            "version-max": 12,
+            "last-update": "2015-10-18",
+            "recommended": 0,
+            "authors": [
+                "pca006132"
+            ]
+        },
+        "http://www.mcbbs.net/thread-532683-1-1.html": {
+            "title": "3D迷宫生成",
+            "tags": [
+                "数学",
+                "算法",
+                "游戏系统",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 9,
+            "version-max": 12,
+            "last-update": "2016-01-01",
+            "recommended": 0,
+            "authors": [
+                "林扬骐"
+            ]
+        },
+        "http://www.mcbbs.net/thread-639929-1-1.html": {
+            "title": "广度优先寻路算法",
+            "tags": [
+                "数学",
+                "算法",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 11,
+            "version-max": 12,
+            "last-update": "2016-10-06",
+            "recommended": 0,
+            "authors": [
+                "Sunny_KyLe"
+            ]
+        },
+        "http://www.mcbbs.net/thread-617894-1-1.html": {
+            "title": "解数独",
+            "tags": [
+                "数学",
+                "算法",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 11,
+            "version-max": 12,
+            "last-update": "2016-08-09",
+            "recommended": 0,
+            "authors": [
+                "MojeDes"
+            ]
+        },
+        "http://www.mcbbs.net/thread-620979-1-1.html": {
+            "title": "Bezier贝塞尔曲线生成",
+            "tags": [
+                "数学",
+                "算法",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 9,
+            "version-max": 10,
+            "last-update": "2016-08-16",
+            "recommended": 0,
+            "authors": [
+                "ruhuasiyu"
+            ]
+        },
+        "http://www.mcbbs.net/thread-654676-1-1.html": {
+            "title": "方块结构旋转",
+            "tags": [
+                "数学",
+                "算法",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 9,
+            "version-max": 12,
+            "recommended": 0,
+            "authors": [
+                "林扬骐"
+            ],
+            "last-update": "2016-12-17"
+        },
+        "http://www.mcbbs.net/thread-664232-1-1.html": {
+            "title": "平面投影变换",
+            "tags": [
+                "数学",
+                "算法",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 9,
+            "version-max": 12,
+            "recommended": 0,
+            "authors": [
+                "林扬骐"
+            ],
+            "last-update": "2017-01-19"
+        },
+        "http://www.mcbbs.net/thread-660559-1-1.html": {
+            "title": "水平追踪导弹",
+            "tags": [
+                "算法",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 9,
+            "version-max": 12,
+            "last-update": "2017-01-13",
+            "recommended": 0,
+            "authors": [
+                "雷鸣·翾鹗"
+            ]
+        },
+        "http://www.mcbbs.net/thread-669417-1-1.html": {
+            "title": "水平追踪导弹·改",
+            "tags": [
+                "算法",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 9,
+            "version-max": 12,
+            "last-update": "2017-02-01",
+            "recommended": 0,
+            "authors": [
+                "skeleton小白"
+            ]
+        },
+        "https://tieba.baidu.com/p/5038939384": {
+            "title": "浅谈实体连线检测",
+            "tags": [
+                "算法",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 9,
+            "version-max": 12,
+            "last-update": "2017-03-25",
+            "recommended": 0,
+            "authors": [
+                "TineBK"
+            ]
+        },
+        "http://www.mcbbs.net/thread-684633-1-1.html": {
+            "title": "数组二进制运算",
+            "tags": [
+                "数学",
+                "算法",
+                "概念验证",
+                "实例"
+            ],
+            "category": "算法逻辑",
+            "version-min": 9,
+            "version-max": 12,
+            "last-update": "2017-04-04",
+            "recommended": 0,
+            "authors": [
+                "贰逼"
+            ]
+        }
     }
 }
