@@ -1292,6 +1292,20 @@
             "authors": [
                 "贰逼"
             ]
+        },
+        "http://www.mcbbs.net/thread-786687-1-1.html": {
+            "title": "spu(命令升级)",
+            "tags": [
+                "其他生成器/资源"
+            ],
+            "category": "生成器/资源",
+            "version-min": 12,
+            "version-max": 13,
+            "last-update": "2018-07-03",
+            "recommended": 1,
+            "authors": [
+                "SPGoding"
+            ]
         }
     }
 }
